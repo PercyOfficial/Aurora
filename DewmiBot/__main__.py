@@ -90,6 +90,7 @@ STICKERS = (
       "CAACAgUAAxkBAAJbnGEwT2VEStWCJIXIwIEu8rlSwU9MAALQAwACubJIVWAarwqi9W7LIAQ",
 )    
 
+ROSE = "🎯Updates:- @sl_bot_zone\n🎯Support:- @slbotzone\n🎯Developer:- @supunmabot "
 
 BUTTONS = [
     [
@@ -504,6 +505,12 @@ def DewmiBot_about_callback(update, context):
                 ]
             ),
         )
+        
+@pbot.on_callback_query(filters.regex("info_"))
+async def stats_callbacc(_, CallbackQuery):
+    text = ROSE
+    await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)       
+        
 @run_async
 @typing_action
 def get_help(update, context):
