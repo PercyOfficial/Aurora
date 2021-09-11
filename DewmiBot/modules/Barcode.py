@@ -17,7 +17,7 @@ from DewmiBot.events import register
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["missjuliarobot"]
+db = client["DewmiBot"]
 approved_users = db.approve
 
 
