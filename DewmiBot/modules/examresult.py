@@ -1,3 +1,22 @@
+# This is prohibited use without permission and special thanks and all codes belong to UvinduBro
+# GROUP MANGER plugin for szrosebot created by ~ youtubeslgeekshow 
+# License = Apache License 2.0
+# read this carefully 
+# This file is part of Uvindu Bro - Donents.LK Bot  (Telegram Bot)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the Apache License 2.0 License as
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# Apache License 2.0 License for more details.
+
+# You should have received a copy of the Apache License 2.0 License
+# along with this program.  If not, see <https://www.apache.org/licenses/LICENSE-2.0/>.
+
+
 from telethon import TelegramClient, events
 from DewmiBot import telethn as tbot
 import json
