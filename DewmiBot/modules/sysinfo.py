@@ -7,6 +7,7 @@ import uuid
 from datetime import datetime
 from os import environ, execle, path, remove
 from DewmiBot import telethn as tbot
+from DewmiBot.events import register
 
 import psutil
 from pyrogram import  Client, filters, __version__
@@ -14,8 +15,8 @@ from pyrogram import  Client, filters, __version__
 
 # FETCH SYSINFO
 
-@tbot.on_message(filters.command('sysinfo'))
-async def give_sysinfo(client, message):
+@register(pattern="^/sysinfo$")
+async def give_sysinfo(event)::
     splatform = platform.system()
     platform_release = platform.release()
     platform_version = platform.version()
