@@ -69,7 +69,7 @@ async def _(event):
         reply_message = await event.get_reply_message()
         await event.reply("Processing...")
         try:
-            downloaded_file_name = await tbot.download_media(
+            downloaded_file_name = await pbot.download_media(
                 reply_message, TEMP_DOWNLOAD_DIRECTORY
             )
         except Exception as e:
