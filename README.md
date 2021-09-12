@@ -67,6 +67,8 @@ The easy way to host this bot
 - result.py
 - vc.py
 - [New features]() 
+- Image editor 
+- virus scan 
     
 </details>
 
@@ -77,7 +79,6 @@ The easy way to host this bot
 
 - [Damantha126](https://github.com/Damantha126) 
 - [Sadew451](https://github.com/Sadew451) 
-- [Dan](https://github.com/delivrance) 
 - [Uvindu-bro](https://github.com/UvinduBro) 
 - [daisyx-old](https://github.com/TeamDaisyX/Daisy-OLD)
 - [innexia](https://github.com/DarkCybers/innexia/tree/Sammy/innexiaBot)
