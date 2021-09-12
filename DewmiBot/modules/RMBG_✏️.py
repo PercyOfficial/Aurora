@@ -6,20 +6,19 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-from DewmiBot import REM_BG_API_KEY
-from DewmiBot import TEMP_DOWNLOAD_DIRECTORY
-
+from DewmiBot.config import get_str_key
 from DewmiBot.events import register
-from DewmiBot import pbot
+from DewmiBot import telethn as tbot
 
-
+REM_BG_API_KEY = get_str_key("REM_BG_API_KEY", required=False)
+TEMP_DOWNLOAD_DIRECTORY = "./"
 
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
         return isinstance(
             (
-                await pbot(functions.channels.GetParticipantRequest(chat, user))
+                await tbot(functions.channels.GetParticipantRequest(chat, user))
             ).participant,
             (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
         )
@@ -47,7 +46,7 @@ async def _(event):
         reply_message = await event.get_reply_message()
         await event.reply("Processing...")
         try:
-            downloaded_file_name = await pbot.download_media(
+            downloaded_file_name = await tbot.download_media(
                 reply_message, TEMP_DOWNLOAD_DIRECTORY
             )
         except Exception as e:
@@ -97,3 +96,9 @@ def ReTrieveFile(input_file_name):
         stream=True,
     )
     return r
+
+__help__ = """
+@szrosebot🇱🇰
+ ❍ /rmbg: Type in reply to a media to remove it's background
+"""
+__mod_name__ = "Remove BG"
