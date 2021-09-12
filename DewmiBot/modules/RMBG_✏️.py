@@ -70,12 +70,10 @@ async def _(event):
                 allow_cache=False,
                 reply_to=message_id,
             )
-            return
         end = datetime.now()
         ms = (end - start).seconds
         await gg.edit("🤗** Background Removed in `{}` seconds **\nPowered by @szrosebot🇱🇰 \nUpdates channel 👉 @sl_bot_zone ".format(ms))
     else:
-           return
         await gg.edit(
             "remove.bg API returned Errors. Please report to @slbotzone\n`{}`\nor join 👉 @sl_bot_zone ".format(
                 output_file_name.content.decode("UTF-8")
