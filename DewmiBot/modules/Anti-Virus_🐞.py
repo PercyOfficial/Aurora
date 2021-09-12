@@ -25,7 +25,7 @@ from telethon.tl.types import DocumentAttributeFilename, MessageMediaDocument
 
 from DewmiBot.config import get_str_key
 from DewmiBot.events import register
-from DewmiBot import  tbot
+from DewmiBot import telethn as tbot
 
 
 async def is_register_admin(chat, user):
