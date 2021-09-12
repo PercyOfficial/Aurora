@@ -45,6 +45,7 @@ async def _(event):
         message_id = event.reply_to_msg_id
         reply_message = await event.get_reply_message()
         await event.reply("🔄 ** Please wait Processing Your image ...**")
+             return
         try:
             downloaded_file_name = await tbot.download_media(
                 reply_message, TEMP_DOWNLOAD_DIRECTORY
@@ -70,10 +71,12 @@ async def _(event):
                 allow_cache=False,
                 reply_to=message_id,
             )
+            return
         end = datetime.now()
         ms = (end - start).seconds
         await event.reply("🤗** Background Removed in `{}` seconds **\nPowered by @szrosebot🇱🇰 \nUpdates channel 👉 @sl_bot_zone ".format(ms))
     else:
+           return
         await event.reply(
             "remove.bg API returned Errors. Please report to @slbotzone\n`{}`\nor join 👉 @sl_bot_zone ".format(
                 output_file_name.content.decode("UTF-8")
