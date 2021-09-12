@@ -234,7 +234,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "𝑰'𝒎 𝒂𝒘𝒂𝒌𝒆 𝒂𝒍𝒓𝒆𝒂𝒅𝒚!😊\n<b>𝑯𝒂𝒗𝒆𝒏'𝒕 𝒔𝒍𝒆𝒑𝒕 𝒔𝒊𝒏𝒄𝒆:</b> <code>{}</code>😝".format(
+            " I'm online!!😊\n<b>Up since:</b> <code>{}</code>😝".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -242,7 +242,7 @@ def start(update: Update, context: CallbackContext):
                 [[InlineKeyboardButton(text="Info", callback_data="info_")]],
             ),
         )
-     
+    
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
     LOGGER.error(msg="Exception while handling an update:", exc_info=context.error)
