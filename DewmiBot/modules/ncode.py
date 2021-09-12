@@ -15,7 +15,7 @@ async def coder_print(event):
     a = await event.client.download_media(
         await event.get_reply_message(), TEMP_DOWNLOAD_DIRECTORY
     )
-    s = open(a, "r")
+    s = open(a,"r")
     c = s.read()
     s.close()
     pygments.highlight(
