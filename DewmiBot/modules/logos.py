@@ -84,7 +84,7 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./DewmiBot/resources/photo_2021-08-21_23-14-49.jpg')
+    img = Image.open('./DewmiBot/resources/photo_2021-08-21_23-14-49.png')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
@@ -97,7 +97,7 @@ async def lego(event):
     draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="black", stroke_width=5, stroke_fill="red")
+    draw.text((x, y), text, font=font, fill="black", stroke_width=5, stroke_fill="dark")
     fname2 = "AnkiVectorLogo.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @szrosebot🇱🇰")
@@ -121,7 +121,7 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./DewmiBot/resources/photo_2021-08-21_23-14-49.jpg')
+    img = Image.open('./DewmiBot/resources/photo_2021-08-21_23-14-49.png')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
@@ -158,7 +158,7 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./DewmiBot/resources/photo_2021-08-21_23-18-11.jpg')
+    img = Image.open('./DewmiBot/resources/photo_2021-08-21_23-18-11.png')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
