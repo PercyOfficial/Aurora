@@ -21,7 +21,7 @@ from telethon import TelegramClient, events
 from DewmiBot import telethn as tbot
 import json
 import requests
-from DewmiBot.sample_config import API_HASH, API_ID, TOKEN
+from DewmiBot.sample_config import API_ID, API_HASH, TOKEN
 
 bot = TelegramClient('bot',  API_ID, API_HASH).start(bot_token=TOKEN)
 
