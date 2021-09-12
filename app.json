@@ -56,7 +56,7 @@
       "required": true
        },
     "VIRUS_API_KEY": {
-      "description": "Get one from https://cloudmersive.com/virus-api",
+      "description": "Get one from https://cloudmersive.com/virus-api ",
       "value": "",
       "required": false
       },      
