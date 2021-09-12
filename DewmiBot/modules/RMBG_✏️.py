@@ -132,9 +132,14 @@ file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
+
+
 __help__ = """
- - /rmbg: Type in reply to a media to remove it's background
+@szrosebot🇱🇰
+ ❍ /rmbg: Type in reply to a media to remove it's background
 """
+__mod_name__ = "virus"
+
 
 CMD_HELP.update({
     file_helpo: [
