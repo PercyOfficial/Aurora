@@ -16,7 +16,7 @@ from pyrogram import  Client, filters, __version__
 # FETCH SYSINFO
 
 @register(pattern="^/sysinfo$")
-async def give_sysinfo(event)::
+async def give_sysinfo(event):
     splatform = platform.system()
     platform_release = platform.release()
     platform_version = platform.version()
