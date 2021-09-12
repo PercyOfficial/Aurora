@@ -138,7 +138,7 @@ __help__ = """
 @szrosebot🇱🇰
  ❍ /rmbg: Type in reply to a media to remove it's background
 """
-__mod_name__ = "virus"
+__mod_name__ = "Remove BG"
 
 
 CMD_HELP.update({
