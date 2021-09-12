@@ -90,10 +90,7 @@ STICKERS = (
       "CAACAgUAAxkBAAJbnGEwT2VEStWCJIXIwIEu8rlSwU9MAALQAwACubJIVWAarwqi9W7LIAQ",
 )    
 
-ROSE = ("🎯Updates:- @sl_bot_zone",
-        "🎯Support:- @slbotzone",
-        "🎯Developer:- @supunmabot",
-)
+ROSE = "🎯Updates:- @sl_bot_zone"
 
 BUTTONS = [
     [
