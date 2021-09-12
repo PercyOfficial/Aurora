@@ -73,10 +73,11 @@ The easy way to host this bot
 </details>
     
 ## New Features Updated
-   Virus scan 
-   remove back ground 
-   Image editor 
-   System info 
+    
+   - Virus scan 
+   - remove back ground 
+   - Image editor 
+   - System info 
     
 <details>
   <summary><b>Credits </b></summary>
