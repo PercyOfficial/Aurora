@@ -10,7 +10,7 @@ import youtube_dl
 from pyrogram import filters
 from DewmiBot import pbot
 from youtube_search import YoutubeSearch
-from DewmiBot.pyrogramee.errors import capture_err
+from DewmiBot.errors import capture_err
 
 
 def time_to_seconds(time):
