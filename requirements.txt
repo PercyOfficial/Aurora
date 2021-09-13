@@ -70,4 +70,3 @@ pymongo==3.11.0
 dnspython==2.0.0
 pygments
 tswift
-barcode
