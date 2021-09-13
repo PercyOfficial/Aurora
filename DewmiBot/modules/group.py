@@ -118,3 +118,13 @@ async def set_chat_description(_, message):
     except Exception as e:
         print(e)
         await message.reply_text(e)
+        
+__help__ = """
+@szrosebot🇱🇰
+ ❍ /setgtitle <newtitle>*:* Sets new chat title in your group.
+ ❍ /setgpic*:* As a reply to file or photo to set group profile pic!
+ ❍ /delgpic*:* Same as above but to remove group profile pic.
+ ❍ /setsticker*:* As a reply to some sticker to set it as group sticker set!
+ ❍ /setdescription <description>*:* Sets new chat description in group.
+"""
+__mod_name__ = "GROUP"      
