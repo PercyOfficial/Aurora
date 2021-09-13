@@ -421,13 +421,13 @@ def set_about_me(update: Update, context: CallbackContext):
 
 @run_async
 @sudo_plus
-def stat(update: Update, context: CallbackContext):
+def stats(update: Update, context: CallbackContext):
     process = subprocess.Popen(
         "neofetch --stdout", shell=True, text=True, stdout=subprocess.PIPE
     )
     output = process.communicate()[0]
     stats = (
-        "<b>Current stats:</b>\n"
+        "<b>stats of szrosebot📊:</b>\n"
         + "\n"
         + output
         + "\n".join([mod.__stats__() for mod in STATS])
