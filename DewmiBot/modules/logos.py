@@ -12,7 +12,7 @@ from telethon.tl.types import InputMessagesFilterPhotos
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
-#Add telegraph media links of profile pics that are to be used
+
 TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/e354ce72d5cc6a1d27c4d.jpg", 
                          "https://telegra.ph/file/8f9ff3d743e6707a61489.jpg", 
                          "https://telegra.ph/file/bfc97f4abc4bec6fe860d.jpg", 
@@ -84,7 +84,7 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./DewmiBot/resources/photo_2021-08-21_23-14-49.png')
+    img = Image.open(random.choice(TELEGRAPH_MEDIA_LINKS))
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
