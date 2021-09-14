@@ -3,7 +3,7 @@
 # Avaiilable a latest version as [@szrosebot](https://t.me/szrosebot) on Telegram
 
 <p align="center"><a href="https://t.me/szrosebot"><img src="https://telegra.ph/file/962fd9b77226c7c21553c.png" width="400"></a></p>
-<p align="center">
+<p align="center"></P>
 
 <p align="center"> <br>
     <img src="https://img.shields.io/github/license/youtubeslgeekshow/sz-rose-bot?style=for-the-badge&logo=appveyor" alt="LICENSE">
@@ -20,7 +20,7 @@
 <a href="https://t.me/szrosebot"><img src="https://img.shields.io/badge/Foundbot%20on-blue.svg?style=for-the-badge&logo=Telegram">
     
     
-| ** SOCIAL MEDIA ** |  **Follow **   |
+| SOCIAL MEDIA  |  Follow    |
 |------------|---------------------|
 |   Youtube   | [![Youtube](https://img.shields.io/badge/YouTube%20Channel-ff0000?style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=youtube)](https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA?sub_confirmation=1)&nbsp; |
 |  Telegram    | [![Telegram](https://img.shields.io/badge/slbotzone%20Team-003245?style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=telegram)](https://t.me/slbotzone)&nbsp;|
@@ -49,6 +49,8 @@
     
 ## New Features Updated 😊
     
+    
+    
    - Url shortner
    - Virus scan 
    - Remove back ground 
@@ -68,8 +70,10 @@
    - Group customize 
    - [More info here](https://t.me/szroseupdates)
     
+    
 ## Credits 🥰 
 
+    
 - [hirunaofficial](https://github.com/hirunaofficial)~ (DEV)
 - [Damantha126](https://github.com/Damantha126)~ (DEV)
 - [Sadew451](https://github.com/Sadew451) ~ (DEV)
