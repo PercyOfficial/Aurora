@@ -503,7 +503,7 @@ def DewmiBot_about_callback(update, context):
             ),
         )
         
-@pbot.on_callback_query(filters.regex("stats_callback"))
+@pbot.on_callback_query(Filters.regex("stats_callback"))
 async def stats_callbacc(_, CallbackQuery):
     text = rose
     await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)
