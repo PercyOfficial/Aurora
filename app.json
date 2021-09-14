@@ -8,14 +8,6 @@
          "Telegram-Group-Management-Bot-DewmiBot"
       ],   
    "repository": "https://github.com/hirunaofficial/Telegram-Group-Management-Bot-DewmiBot/",
-   "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
    "buildpacks": [
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
