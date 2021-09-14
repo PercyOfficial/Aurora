@@ -1,13 +1,13 @@
 {
-      "name": "Telegram-Group-Management-Bot-DewmiBot",
-      "description": "A Powerful BOT to Make Your Groups Secured and Organized.",
-	  "logo": "https://telegra.ph/file/1ead052789170e712384a.jpg",
+      "name": "SZROSEBOT",
+      "description": "Hey there 👋 I'm szrosebot .A Powerful, Smart And Simple Group Manager with some extra features..",
+	  "logo": "https://telegra.ph/file/d2fc97935e25f65ffa38e.jpg",
       "keywords": [
          "Telegram",
-         "Groupmanage",
-         "Telegram-Group-Management-Bot-DewmiBot"
+         "Groupmanager",
+         "sz-rose-bot"
       ],   
-   "repository": "https://github.com/hirunaofficial/Telegram-Group-Management-Bot-DewmiBot/",
+   "repository": "https://github.com/youtubeslgeekshow/sz-rose-bot",
    "buildpacks": [
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
