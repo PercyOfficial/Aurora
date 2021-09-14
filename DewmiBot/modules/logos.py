@@ -39,14 +39,14 @@ async def lego(event):
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./DewmiBot/resources/Chopsic.otf", 50)
+    font = ImageFont.truetype("./DewmiBot/resources/Chopsic.otf", 100)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
-    draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
+    draw.text(((image_widthz-w)/4, (image_heightz-h)/4), text, font=font, fill=(255, 255, 255))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="black", stroke_width=40, stroke_fill="blue")
+    draw.text((x, y), text, font=font, fill="black", stroke_width=5, stroke_fill="blue")
     fname2 = "Logo.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @szrosebot🇱🇰")
