@@ -255,8 +255,7 @@ def error_handler(update, context):
     message = (
         "An exception was raised while handling an update\n"
         "<pre>update = {}</pre>\n\n"
-        "<pre>{}</pre>"
-        
+        "<pre>{}</pre>"   
     ).format(
         html.escape(json.dumps(update.to_dict(), indent=2, ensure_ascii=False)),
         html.escape(tb),
