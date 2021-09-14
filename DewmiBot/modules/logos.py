@@ -17,7 +17,6 @@ TELEGRAPH_MEDIA_LINKS = ["./DewmiBot/resources/clarisse-meyer-y54gnzC86lw-unspla
                          "./DewmiBot/resources/martin-lostak-OZVfdsT0J2g-unsplash.jpg",
                          "./DewmiBot/resources/oxxaca-J84qvBcQ_ys-unsplash.jpg"
                          ]
-
 @register(pattern="^/logo ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
@@ -36,17 +35,17 @@ async def lego(event):
     img = Image.open(random.choice(TELEGRAPH_MEDIA_LINKS))
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
-    pointsize = 400
+    pointsize = 25
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./DewmiBot/resources/Chopsic.otf",200)
+    font = ImageFont.truetype("./DewmiBot/resources/font.otf", 100)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
-    draw.text(((image_widthz-w)/4, (image_heightz-h)/4), text, font=font, fill=(255, 255, 255))
+    draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="black", stroke_width=5, stroke_fill="blue")
+    draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "Logo.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @szrosebot🇱🇰")
@@ -54,6 +53,7 @@ async def lego(event):
             os.remove(fname2)
  except Exception as e:
    await event.reply(f'Join with us ~ @sl_bot_zone to use this, {e}')
+
 
 @register(pattern="^/wlogo ?(.*)")
 async def lego(event):
