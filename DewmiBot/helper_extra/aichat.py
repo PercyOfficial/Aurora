@@ -1,4 +1,4 @@
-from AnkiVector.mongo import mongodb as db_x
+from DewmiBot.mongo import mongodb as db_x
 
 lydia = db_x["CAHTBOT"]
 
