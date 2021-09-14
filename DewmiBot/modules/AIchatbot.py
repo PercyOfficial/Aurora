@@ -82,20 +82,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Anki Vector AI Already Activated In This Chat")
+            await lel.edit(" AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Anki Vector AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Anki Vector AI Was Not Activated In This Chat")
+            await lel.edit(" AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Anki Vector AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f" AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
