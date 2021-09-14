@@ -1,4 +1,5 @@
 __help__ = """
+@szrosebot🇱🇰
 
 📝CAPTION EDITOR 
 now you can edit any file caption useing szrosebot .
