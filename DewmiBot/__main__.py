@@ -90,7 +90,7 @@ STICKERS = (
       "CAACAgUAAxkBAAJbnGEwT2VEStWCJIXIwIEu8rlSwU9MAALQAwACubJIVWAarwqi9W7LIAQ",
 )    
 
-ROSE = "🎯Updates:- @sl_bot_zone"
+rose = "🎯Updates:- @sl_bot_zone"
 
 BUTTONS = [
     [
@@ -239,7 +239,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Info", callback_data="info_")]],
+                [[InlineKeyboardButton(text="Info", callback_data="stats_callback")]],
             ),
         )
     
@@ -505,11 +505,11 @@ def DewmiBot_about_callback(update, context):
             ),
         )
         
-@pbot.on_callback_query(Filters.regex("info_"))
+@pbot.on_callback_query(filters.regex("stats_callback"))
 async def stats_callbacc(_, CallbackQuery):
-    text = ROSE
-    await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)       
-        
+    text = rose
+    await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)
+            
 @run_async
 @typing_action
 def get_help(update, context):
