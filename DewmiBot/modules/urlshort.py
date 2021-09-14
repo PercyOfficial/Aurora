@@ -47,5 +47,6 @@ async def shortify(client, message):
             "https://api-ssl.bitly.com/v4/shorten", headers=header, data=payload
         ) as resp:
             data = await resp.json()
-    msg = f"**Original Url:** {url}\n**Shortened Url:** {data['link']}\n**Powered by**:-@szrosebot🇱🇰 "
+    msg = f"**Original Url:** {url}\n\n**Shortened Url:** {data['link']}\n\n**Powered by**:-@szrosebot🇱🇰 ",
+          disable_web_page_preview=True,
     await lel.edit(msg)
