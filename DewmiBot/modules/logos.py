@@ -36,10 +36,10 @@ async def lego(event):
     img = Image.open(random.choice(TELEGRAPH_MEDIA_LINKS))
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
-    pointsize = 500
+    pointsize = 400
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./DewmiBot/resources/Chopsic.otf", 100)
+    font = ImageFont.truetype("./DewmiBot/resources/Chopsic.otf",200)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
