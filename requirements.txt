@@ -72,5 +72,5 @@ dnspython==2.0.0
 pygments
 tswift
 youtube_search
-
+fontTools
 
