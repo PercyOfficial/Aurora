@@ -4,7 +4,6 @@ from DewmiBot.pyrogramee.json_prettify import json_prettify
 from DewmiBot.pyrogramee.fetch import fetch
 from pyrogram import filters
 
-
 @app.on_message(filters.command("covid") & ~filters.edited)
 @capture_err
 async def covid(_, message):
