@@ -10,12 +10,12 @@ import time
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
-
-TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/33527b46f923f1fb7f8d0.jpg", 
-                         "https://telegra.ph/file/f702fce48373f2e051449.jpg", 
-                         "https://telegra.ph/file/9a3cd9165f012f035a5f6.jpg"
+TELEGRAPH_MEDIA_LINKS = ["./DewmiBot/resources/clarisse-meyer-y54gnzC86lw-unsplash.jpg", 
+                         "./DewmiBot/resources/frame-harirak-qrRcfBbKKrc-unsplash.jpg", 
+                         "./DewmiBot/resources/marek-piwnicki-KMvdCkmvN38-unsplash.jpg",
+                         "./DewmiBot/resources/martin-lostak-OZVfdsT0J2g-unsplash.jpg",
+                         "./DewmiBot/resources/oxxaca-J84qvBcQ_ys-unsplash.jpg"
                          ]
 
 @register(pattern="^/logo ?(.*)")
@@ -33,7 +33,7 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open(random.choice('DewmiBot/logo'))
+    img = Image.open(random.choice(TELEGRAPH_MEDIA_LINKS))
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
@@ -47,7 +47,7 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="black", stroke_width=5, stroke_fill="blue")
-    fname2 = "AnkiVectorLogo.png"
+    fname2 = "Logo.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @szrosebot🇱🇰")
     if os.path.exists(fname2):
@@ -84,7 +84,7 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
-    fname2 = "AnkiVectorLogo.png"
+    fname2 = "Logo.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @szrosebot🇱🇰")
     if os.path.exists(fname2):
@@ -123,7 +123,7 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
-    fname2 = "AnkiVectorLogo.png"
+    fname2 = "Logo.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @szrosebot🇱🇰")
     if os.path.exists(fname2):
