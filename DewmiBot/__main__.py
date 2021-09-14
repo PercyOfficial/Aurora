@@ -68,8 +68,6 @@ I can manage your group with lots of useful features, feel free to add me to you
 """
 
 HELP_STRINGS = f"""
-*Rose Help Menu*
-/donate ** me  Keep this service alive ** 🥺
 𝑻𝒉𝒆 𝒇𝒐𝒍𝒍𝒐𝒘𝒊𝒏𝒈 𝒇𝒖𝒏𝒄𝒕𝒊𝒐𝒏𝒔 𝒘𝒊𝒍𝒍 𝒉𝒆𝒍𝒑𝒇𝒖𝒍 𝒕𝒐 𝒚𝒐𝒖 𝒕𝒐 𝒎𝒂𝒏𝒂𝒈𝒆 𝒚𝒐𝒖𝒓 𝒈𝒓𝒐𝒖𝒑🙂
 """.format(
     dispatcher.bot.first_name,
