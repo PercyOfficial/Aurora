@@ -99,6 +99,7 @@ if ENV:
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
     log = os.environ.get("log", "-1001589738293")
     OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", None)
+    BOT_ID = os.environ.get("BOT_ID", None)  
     
     try:
         WHITELIST_CHATS = set(
