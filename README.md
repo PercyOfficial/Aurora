@@ -43,34 +43,6 @@
  - It is forbidden to clone this without my permission and fork is allowed.
  - This is the clone of DewmiBot it is a  Powerful, Smart And Simple Group Manager bot made by hirunaofficial.
 ```
-
-
-
-    
-## New Features Updated 😊
-    
-    
-    
-   - Url shortner
-   - Virus scan 
-   - Remove back ground 
-   - Image editor 
-   - System info 
-   - Book search 
-   - Covid info 
-   - github 
-   - Caption editor
-   - Night mode
-   - Cricket score
-   - Exam result ( Grade 5 , o/l , a/l)
-   - Games 
-   - Heroku ( restart / updates / logs /set var)
-   - Telegraph upload ( text / media)
-   - song search (With thubnail and more details)
-   - Group customize 
-   - [More info here](https://t.me/szroseupdates)
-    
-    
 ## Credits 🥰 
 
     
@@ -103,4 +75,25 @@
 - python3 -m bot
 ```
 
- 
+ ## New Features Updated 😊
+    
+    
+    
+   - Url shortner
+   - Virus scan 
+   - Remove back ground 
+   - Image editor 
+   - System info 
+   - Book search 
+   - Covid info 
+   - github 
+   - Caption editor
+   - Night mode
+   - Cricket score
+   - Exam result ( Grade 5 , o/l , a/l)
+   - Games 
+   - Heroku ( restart / updates / logs /set var)
+   - Telegraph upload ( text / media)
+   - song search (With thubnail and more details)
+   - Group customize 
+   - [More info here](https://t.me/szroseupdates)
