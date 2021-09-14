@@ -3,7 +3,7 @@
 import sys
 import traceback
 from functools import wraps
-from GroupMenter import pbot, SUPPORT_CHAT
+from DewmiBot import pbot
 
 def split_limits(text):
     if len(text) < 2048:
@@ -43,7 +43,6 @@ def capture_err(func):
             )
             for x in error_feedback:
                 await pbot.send_message(
-                    SUPPORT_CHAT,
                     x
                 )
             raise err
