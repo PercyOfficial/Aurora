@@ -1,6 +1,6 @@
 <h1> A Powerful, Smart And Simple Group Manager szrose bot </h1>
 
-This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group-Management-Bot-DewmiBot)it is a  Powerful, Smart And Simple Group Manager bot made by [hirunaofficial](https://github.com/hirunaofficial)
+# Avaiilable a latest version as [@szrosebot](https://t.me/szrosebot) on Telegram
 
 <p align="center"><a href="https://t.me/szrosebot"><img src="https://telegra.ph/file/962fd9b77226c7c21553c.png" width="400"></a></p>
 <p align="center">
@@ -18,27 +18,20 @@ This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group
 <a href="https://t.me/slbotzone"><img src="https://img.shields.io/badge/support%20group-blue.svg?style=for-the-badge&logo=Telegram">
 </a> <a href="https://t.me/SL_bot_zone"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/szrosebot"><img src="https://img.shields.io/badge/Foundbot%20on-blue.svg?style=for-the-badge&logo=Telegram">
-
-• Can be found on telegram as 
-<p align="center"><a href="https://t.me/szrosebot"><img src="https://img.shields.io/badge/SZ-ROSE-BOTred?style=plastic&logo=telegram&logoColor=red"width="200"heigh="100" /></a></p>   
     
     
-## codes owner 
-[click here](https://github.com/hirunaofficial)
-    
-<p align="center"><a href="https://github.com/hirunaofficial"><img src="https://img.shields.io/badge/HIRUNA-OFFICIALblue?style=plastic&logo=telegram&logoColor=red"width="200"heigh="100" /></a></p>  
+| ** SOCIAL MEDIA ** |  **Follow **   |
+|------------|---------------------|
+|   Youtube   | [![Youtube](https://img.shields.io/badge/YouTube%20Channel-ff0000?style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=youtube)](https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA?sub_confirmation=1)&nbsp; |
+|  Telegram    | [![Telegram](https://img.shields.io/badge/slbotzone%20Team-003245?style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=telegram)](https://t.me/slbotzone)&nbsp;|
+|  Facebook  | [![Facebook](https://img.shields.io/badge/Follow%20me%20on%20Facebook-2533cf?style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=facebook)](https://www.facebook.com/SL-Geek-Show-yt-103654258471929/)&nbsp;|
+|  Intagram | [![Intagram](https://img.shields.io/badge/Follow%20me%20on%20Instagram-4d267a?style=style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=instagram)](https://www.instagram.com/sl_geek_show/)&nbsp; |
+| Github | [![Github](https://img.shields.io/badge/Github-000000?style=style=flat&labelColor=224242&logoColor=white&for-the-badge&logo=github)](https://github.com/youtubeslgeekshow) |
     
     
 ## Repo Stats
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=youtubeslgeekshow&repo=sz-rose-bot&theme=dark)
 
-
-
-##  deploy to Heroku 
-The easy way to host this bot
-
-
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/youtubeslgeekshow/sz-rose-bot"><img src="https://img.shields.io/badge/HEROKU-DEPLOY-blue?style=plastic&logo=heroku&logoColor=red"width="300"heigh="100" /></a></p>
 
   
 
@@ -48,49 +41,49 @@ The easy way to host this bot
  - The real owner here is hirunaofficial and I offer him my special thanks.
  - You can use his repo below at any time if you want.
  - It is forbidden to clone this without my permission and fork is allowed.
+ - This is the clone of DewmiBot it is a  Powerful, Smart And Simple Group Manager bot made by hirunaofficial.
 ```
 
 
-<details>
-  <summary><b>What? Newly added .py file</b></summary>
+
     
-- function
-- resources
-- Telegraph.py
-- __nightmode.py
-- book.py
-- cscore.py
-- exam.py
-- games.py
-- heroku.py
-- logo.py
-- result.py
-- vc.py
-- [New features]() 
-- Image editor 
-- virus scan 
+## New Features Updated 😊
     
-</details>
-    
-## New Features Updated
-    
+   - Url shortner
    - Virus scan 
-   - remove back ground 
+   - Remove back ground 
    - Image editor 
    - System info 
+   - Book search 
+   - Covid info 
+   - github 
+   - Caption editor
+   - Night mode
+   - Cricket score
+   - Exam result ( Grade 5 , o/l , a/l)
+   - Games 
+   - Heroku ( restart / updates / logs /set var)
+   - Telegraph upload ( text / media)
+   - song search (With thubnail and more details)
+   - Group customize 
+   - [More info here](https://t.me/szroseupdates)
     
-<details>
-  <summary><b>Credits </b></summary>
+## Credits 🥰 
 
-
-- [Damantha126](https://github.com/Damantha126) 
-- [Sadew451](https://github.com/Sadew451) 
-- [Uvindu-bro](https://github.com/UvinduBro) 
+- [hirunaofficial](https://github.com/hirunaofficial)~ (DEV)
+- [Damantha126](https://github.com/Damantha126)~ (DEV)
+- [Sadew451](https://github.com/Sadew451) ~ (DEV)
+- [Uvindu-bro](https://github.com/UvinduBro) ~ (DEV)
 - [daisyx-old](https://github.com/TeamDaisyX/Daisy-OLD)
 - [innexia](https://github.com/DarkCybers/innexia/tree/Sammy/innexiaBot)
+- [Daisyx](https://github.com/TeamDaisyX/DaisyX)
+- [Group Menter](https://github.com/TeamGroupMenter/GroupMenter)
 
-</details>
 
+##  deploy to Heroku 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/youtubeslgeekshow/sz-rose-bot)  
+     
 ## VPS Deployment
 ```
 - sudo apt update && ugrade -y
@@ -107,4 +100,3 @@ The easy way to host this bot
 ```
 
  
-<p align="center"><a href="https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA"><img src="https://img.shields.io/badge/YOU-TUBE-VIDEOred?style=plastic&logo=youtube&logoColor=red"width="300"heigh="100" /></a></p>   
