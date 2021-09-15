@@ -11,11 +11,27 @@ from telethon.tl.types import InputMessagesFilterPhotos
 
 
 
-TELEGRAPH_MEDIA_LINKS = ["./DewmiBot/resources/clarisse-meyer-y54gnzC86lw-unsplash.jpg", 
-                         "./DewmiBot/resources/frame-harirak-qrRcfBbKKrc-unsplash.jpg", 
-                         "./DewmiBot/resources/marek-piwnicki-KMvdCkmvN38-unsplash.jpg",
-                         "./DewmiBot/resources/martin-lostak-OZVfdsT0J2g-unsplash.jpg",
-                         "./DewmiBot/resources/oxxaca-J84qvBcQ_ys-unsplash.jpg"
+TELEGRAPH_MEDIA_LINKS = ["./DewmiBot/resources/download (1).jfif", 
+                         "./DewmiBot/resources/download (1).png", 
+                         "./DewmiBot/resources/download (2).jfif",
+                         "./DewmiBot/resources/download (2).png",
+                         "./DewmiBot/resources/download (3).jfif",    
+                         "./DewmiBot/resources/download (4).jfif", 
+                         "./DewmiBot/resources/download (5).jfif",
+                         "./DewmiBot/resources/download (7).jfif",
+                         "./DewmiBot/resources/download.jfif",
+                         "./DewmiBot/resources/download.png", 
+                         "./DewmiBot/resources/images (1).jfif",
+                         "./DewmiBot/resources/images (2).jfif",
+                         "./DewmiBot/resources/images (3).jfif",
+                         "./DewmiBot/resources/images (4).jfif", 
+                         "./DewmiBot/resources/images (5).jfif",
+                         "./DewmiBot/resources/images (6).jfif",
+                         "./DewmiBot/resources/images (7).jfif",     
+                         "./DewmiBot/resources/images (8).jfif", 
+                         "./DewmiBot/resources/images (9).jfif",
+                         "./DewmiBot/resources/images.jfif",
+                         "./DewmiBot/resources/images.png"
                          ]
 @register(pattern="^/logo ?(.*)")
 async def lego(event):
@@ -45,7 +61,7 @@ async def lego(event):
     draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
+    draw.text((x, y), text, font=font, fill="black", stroke_width=5, stroke_fill="yellow")
     fname2 = "Logo.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @szrosebot🇱🇰")
@@ -56,7 +72,7 @@ async def lego(event):
 
 
 @register(pattern="^/wlogo ?(.*)")
-async def lego(event):
+async def logo(event):
  quew = event.pattern_match.group(1)
  if event.sender_id == OWNER_ID:
      pass
