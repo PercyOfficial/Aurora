@@ -58,13 +58,13 @@
 - sudo apt install python3-pip -y virtualenv
 - sudo apt install ffmpeg -y
 - git clone https://github.com/youtubeslgeekshow/sz-rose-bot  #Clone your repo.
-- cd video-stream
+- cd szrosebot
 - virtualenv env #Create Virtual Environment.
 - source env/bin/activate #Activate Virtual Environment
 - pip3 install --upgrade pip
 - pip3 install -U -r requirements.txt
 - sudo nano config.py #Fill it with your variables value.
-- python3 -m bot
+- python3 -m DewmiBot
 ```
 
  ## New Features Updated 😊
