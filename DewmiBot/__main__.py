@@ -64,7 +64,7 @@ from DewmiBot.modules.helper_funcs.readable_time import get_readable_time
 PM_START_TEXT = """
 Hey there!👋  My name is Rose ✨
 
-I can manage your group with lots of useful features, feel free to add me to your group.
+I can manage your  group with lots of useful features, feel free to add me to your group.
 """
 
 HELP_STRINGS = f"""
