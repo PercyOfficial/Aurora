@@ -33,6 +33,7 @@ TELEGRAPH_MEDIA_LINKS = ["./DewmiBot/resources/download (1).jfif",
                          "./DewmiBot/resources/images.jfif",
                          "./DewmiBot/resources/images.png"
                          ]
+
 @register(pattern="^/logo ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
