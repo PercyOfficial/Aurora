@@ -8,6 +8,8 @@ import traceback
 from sys import argv
 from typing import Optional
 
+from pyrogram.errors import UserNotParticipant, ChatAdminRequired, UsernameNotOccupied
+
 from telegram import (
     Chat,
     InlineKeyboardButton,
@@ -60,6 +62,14 @@ from DewmiBot.modules.helper_funcs.alternate import typing_action
 from DewmiBot.modules.helper_funcs.chat_status import is_user_admin
 from DewmiBot.modules.helper_funcs.misc import paginate_modules
 from DewmiBot.modules.helper_funcs.readable_time import get_readable_time
+
+JOIN_ASAP = " **You cant use me untill subscribe our updates channel** ☹️\n\n So Please join our updates channel by the following button and hit on the ` /start ` button again 😊"
+
+FSUBB = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton(text="Join our update Channel 🗣", url=f"https://t.me/sl_bot_zone") 
+        ]]      
+    )
 
 PM_START_TEXT = """
 Hey there!👋  My name is Rose ✨
@@ -184,6 +194,13 @@ def test(update, context):
 
 @run_async
 def start(update: Update, context: CallbackContext):
+  try:
+        await message._client.get_chat_member(int("-1001325914694"), message.from_user.id)
+    except UserNotParticipant:
+        await message.reply_text(
+        text=JOIN_ASAP, disable_web_page_preview=True, reply_markup=FSUBB
+    )
+        return   
     args = context.args
     uptime = get_readable_time((time.time() - StartTime))
     if update.effective_chat.type == "private":
