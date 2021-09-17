@@ -195,7 +195,7 @@ def test(update, context):
 @run_async
 def start(update: Update, context: CallbackContext):
     try:
-        await message._client.get_chat_member(int("-1001325914694"), message.from_user.id)
+    await message._client.get_chat_member(int("-1001325914694"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(
         text=JOIN_ASAP, disable_web_page_preview=True, reply_markup=FSUBB
