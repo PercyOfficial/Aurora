@@ -2,7 +2,7 @@ import os
 from pyrogram import filters
 from DewmiBot.utils import nekobin
 from DewmiBot import pbot as app
-from DewmiBot.utils.errors import capture_err
+
 
 
 @app.on_message(filters.command("past") & ~filters.edited)
