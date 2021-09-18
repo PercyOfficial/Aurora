@@ -37,7 +37,7 @@ CALCULATE_BUTTONS = InlineKeyboardMarkup(
     )
 
 @pbot.on_message(filters.private & filters.command(["calc", "calculate", "calculator"]))
-def calculate(pbot, update):
+async def calculate(pbot, update):
     await update.reply_text(
         text=CALCULATE_TEXT,
         reply_markup=CALCULATE_BUTTONS,
@@ -47,7 +47,7 @@ def calculate(pbot, update):
 
 
 @pbot.on_callback_query()
-def cb_data(pbot, update):
+async def cb_data(pbot, update):
         data = update.data
         try:
             message_text = update.message.text.split("\n")[0].strip().split("=")[0].strip()
@@ -70,7 +70,7 @@ def cb_data(pbot, update):
 
 
 @pbot.on_inline_query()
-def inline(pbot, update):
+async def inline(pbot, update):
     if len(update.data) == 0:
         try:
             answers = [
