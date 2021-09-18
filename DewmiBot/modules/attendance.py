@@ -1,3 +1,5 @@
+# ©youtubesgeekshow szrosebot only 
+
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, Filters
 from telegram.utils.helpers import mention_markdown, escape_markdown
@@ -26,14 +28,14 @@ def start_attendance(update, context):
             ],
             [
                 InlineKeyboardButton(
-                    "End Attendance (Admin only)",
+                    "End Attendance ",
                     callback_data='end_attendance',
                 ),
             ],
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         context.chat_data['message'] = update.message.reply_text(
-            "Please mark your attendance", reply_markup=reply_markup,
+            "Please mark your attendance 👮‍♀️", reply_markup=reply_markup,
         )
 
 
@@ -48,13 +50,13 @@ def mark_attendance(update, context):
         ] = f'{escape_markdown(update.effective_user.full_name)}'
         context.bot.answer_callback_query(
             callback_query_id=query.id,
-            text="Your attendance has been marked",
+            text="Your attendance has been marked📝",
             show_alert=True,
         )
     else:
         context.bot.answer_callback_query(
             callback_query_id=query.id,
-            text="Your attendance is already marked",
+            text="Your attendance is already marked🔐",
             show_alert=True,
         )
     query.answer()
@@ -106,7 +108,7 @@ def end_attendance_cmd(update, context):
             context.bot.edit_message_text(
                 text="Attendance is over. " +
                 str(len(context.chat_data['attendees'])) +
-                " member(s) marked attendance.\n" +
+                " members  marked attendance.\n" +
                 "Here is the list:\n- " + attendee_list,
                 chat_id=context.chat_data['message'].chat_id,
                 message_id=context.chat_data['message'].message_id,
@@ -122,8 +124,9 @@ def end_attendance_cmd(update, context):
         context.chat_data['attendees'].clear()
 
 __help__ = """
-- `/attendance`*:* Start the attendance
-- `/end_attendance`*:* End the attendance
+@szrosebot🇱🇰
+ ❍  /attendance :Start the attendance
+ ❍  /end_attendance : End the attendance
 """
 
 START_ATTENDANCE = DisableAbleCommandHandler("attendance", start_attendance)
