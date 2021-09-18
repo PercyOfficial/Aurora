@@ -47,7 +47,7 @@ async def calculate(pbot, update):
 
 
 @pbot.on_callback_query()
-async def cb_data(bot, update):
+async def data(bot, update):
         data = update.data
         try:
             message_text = update.message.text.split("\n")[0].strip().split("=")[0].strip()
@@ -69,7 +69,7 @@ async def cb_data(bot, update):
             print(error)
         
 @pbot.on_inline_query()
-async def inline(bot, update):
+async def line(bot, update):
     if len(update.data) == 0:
         try:
             answers = [
