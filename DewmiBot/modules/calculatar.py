@@ -5,7 +5,7 @@ from pyrogram.types import *
 from DewmiBot.config import get_str_key
 from DewmiBot import pbot
 
-CALCULATE_TEXT = "Made by me"
+CALCULATE_TEXT = "simple calculator\n\n@szrosebot🇱🇰"
 
 CALCULATE_BUTTONS = InlineKeyboardMarkup(
         [[
@@ -63,8 +63,18 @@ async def data(bot, update):
             print(error)
         
 @pbot.on_inline_query()
-async def line(bot, update):
-    if len(update.data) == 0:
+async def line(bot, update):  
+    if len(update.data) == 0:        
+        try:
+            answers = [
+                InlineQueryResultArticle(
+                    title="Calculator",
+                    description=f"New calculator",
+                    input_message_content=InputTextMessageContent
+            ]
+        except Exception as error:
+            print(error)
+    else:
         try:
             message_text = update.message.text.split("\n")[0].strip().split("=")[0].strip()
             data = message_text.replace("×", "*").replace("÷", "/")
