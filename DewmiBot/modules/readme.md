@@ -1,5 +1,5 @@
 ## szrosebot Example plugin format
-```
+```python3
 from DewmiBot.decorator import register
 from .utils.disable import disableable_dec
 from .utils.message import get_args_str
