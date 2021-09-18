@@ -153,18 +153,14 @@ def kill(update: Update, context: CallbackContext):
         time.sleep(EDIT_SLEEP)
     msg.edit_text('⚰')
 
-
-
-
 __help__ = """
-╔ `/love`*:* 
-╠ `/hack`*:*
-╠ `/bombs`*:*
-╚ `/kill`*:*
+@szrosebot🇱🇰
+ ❍ /kill
+ ❍ /bombs
+ ❍ /hack
+ ❍ /love
 """
-
 __mod_name__ = "Animation"
-
 
 KILL_HANDLER = DisableAbleCommandHandler("kill",kill)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love)
