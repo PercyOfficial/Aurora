@@ -5,7 +5,7 @@ from DewmiBot import pbot as app
 from DewmiBot.utils.errors import capture_err
 
 
-@app.on_message(filters.command("paste") & ~filters.edited)
+@app.on_message(filters.command("past") & ~filters.edited)
 @capture_err
 async def paste(_, message):
     if message.reply_to_message:
