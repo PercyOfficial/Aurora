@@ -6,7 +6,6 @@ from DewmiBot import pbot as app
 
 
 @app.on_message(filters.command("past") & ~filters.edited)
-@capture_err
 async def paste(_, message):
     if message.reply_to_message:
         app.set_parse_mode("markdown")
