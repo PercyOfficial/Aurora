@@ -46,7 +46,7 @@ async def calculate(pbot, update):
     )
 
 
-@Bot.on_callback_query(filters.(h))
+@Bot.on_callback_query()
 async def cb_data(bot, update):
         data = update.data
         try:
@@ -68,7 +68,7 @@ async def cb_data(bot, update):
         except Exception as error:
             print(error)
         
-@pbot.on_inline_query(f)
+@pbot.on_inline_query()
 async def inline(bot, update):
     if len(update.data) == 0:
         try:
