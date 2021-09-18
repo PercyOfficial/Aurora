@@ -46,7 +46,7 @@ async def calculate(pbot, update):
     )
 
 
-@Bot.on_callback_query()
+@pbot.on_callback_query()
 async def cb_data(bot, update):
         data = update.data
         try:
