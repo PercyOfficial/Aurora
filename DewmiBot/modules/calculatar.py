@@ -51,7 +51,7 @@ async def data(bot, update):
         data = update.data
         try:
             message_text = update.message.text.split("\n")[0].strip().split("=")[0].strip()
-            message_text = ''if CALCULATE_TEXT in message_text else message_text
+            message_text = message_text 
             if data == "=":
                 text = float(eval(message_text))
             elif data == "DEL":
