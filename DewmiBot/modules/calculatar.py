@@ -5,7 +5,7 @@ from pyrogram.types import *
 from DewmiBot.config import get_str_key
 from DewmiBot import pbot
 
-CALCULATE_TEXT = "Made by @omindas ❤️"
+CALCULATE_TEXT = "Made by me"
 
 CALCULATE_BUTTONS = InlineKeyboardMarkup(
         [[
@@ -36,7 +36,7 @@ CALCULATE_BUTTONS = InlineKeyboardMarkup(
         ]]
     )
 
-@pbot.on_message(filters.private & filters.command(["calc", "calculate", "calculator"]))
+@pbot.on_message(filters.command(["calculator"]))
 async def calculate(pbot, update):
     await update.reply_text(
         text=CALCULATE_TEXT,
@@ -47,7 +47,7 @@ async def calculate(pbot, update):
 
 
 @pbot.on_callback_query()
-async def cb_data(pbot, update):
+async def calculator(pbot, update):
         data = update.data
         try:
             message_text = update.message.text.split("\n")[0].strip().split("=")[0].strip()
@@ -70,7 +70,7 @@ async def cb_data(pbot, update):
 
 
 @pbot.on_inline_query()
-async def inline(pbot, update):
+async def calculator(pbot, update):
     if len(update.data) == 0:
         try:
             answers = [
