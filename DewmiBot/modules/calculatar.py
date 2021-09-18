@@ -51,6 +51,7 @@ async def data(bot, update):
         data = update.data
         try:
             message_text = update.message.text.split("\n")[0].strip().split("=")[0].strip()
+            message_text = '' in message_text else message_text
             if data == "=":
                 text = float(eval(message_text))
             elif data == "DEL":
@@ -59,6 +60,9 @@ async def data(bot, update):
                 text = ""
             else:
                 text = message_text + data
+            await update.message.edit_text(
+                text=f"{text}",
+            )
         except Exception as error:
             print(error)
         
