@@ -65,7 +65,6 @@ async def data(bot, update):
 @pbot.on_inline_query()
 async def line(bot, update):
     if len(update.data) == 0:
-    else:
         try:
             message_text = update.message.text.split("\n")[0].strip().split("=")[0].strip()
             data = message_text.replace("×", "*").replace("÷", "/")
