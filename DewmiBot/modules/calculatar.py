@@ -46,8 +46,8 @@ async def calculate(pbot, update):
     )
 
 
-@pbot.on_callback_query()
-async def calculator(pbot, update):
+@pbot.on_message(filters.command(["calculator"]))
+async def calculate(pbot, update):
         data = update.data
         try:
             message_text = update.message.text.split("\n")[0].strip().split("=")[0].strip()
@@ -68,9 +68,8 @@ async def calculator(pbot, update):
         except Exception as error:
             print(error)
 
-
-@pbot.on_inline_query()
-async def calculator(pbot, update):
+@pbot.on_message(filters.command(["calculator"]))
+async def calculate(pbot, update):
     if len(update.data) == 0:
         try:
             answers = [
