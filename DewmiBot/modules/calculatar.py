@@ -68,7 +68,7 @@ async def data(bot, update):
         except Exception as error:
             print(error)
         
-@pbot.on_inline_query(filters.command())()
+@pbot.on_inline_query(filters.command())
 async def line(bot, update):
     if len(update.data) == 0:
         try:
