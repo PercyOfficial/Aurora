@@ -1,5 +1,4 @@
 from DewmiBot import pbot 
-from DewmiBot.utils.errors import capture_err
 from DewmiBot.function.dbfun import (
     update_karma,
     get_karma,
@@ -26,7 +25,6 @@ regex_downvote = r"^(\-|\-\-|\-1|👎)$"
     & ~filters.edited,
     group=karma_positive_group,
 )
-@capture_err
 async def upvote(_, message):
     if message.reply_to_message.from_user.id == message.from_user.id:
         return
@@ -59,7 +57,6 @@ async def upvote(_, message):
     & ~filters.edited,
     group=karma_negative_group,
 )
-@capture_err
 async def downvote(_, message):
     if message.reply_to_message.from_user.id == message.from_user.id:
         return
