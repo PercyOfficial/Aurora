@@ -7,7 +7,7 @@ from DewmiBot import pbot
 
 REPO_TEXT = "**Rose bot ✨** - **All Linked Channels/Repository/Social media**"
   
-BUTTONS = InlineKeyboardMarkupInlineKeyboardMarkup[
+BUTTONS = InlineKeyboardMarkup[
     [
         InlineKeyboardButton("Repository📦", url=f"https://github.com/youtubeslgeekshow/sz-rose-bot"),
         InlineKeyboardButton(
