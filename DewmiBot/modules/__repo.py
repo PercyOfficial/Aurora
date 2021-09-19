@@ -7,26 +7,19 @@ from DewmiBot import pbot
 
 REPO_TEXT = "**Rose bot ✨** - **All Linked Channels/Repository/Social media**"
   
-BUTTONS = InlineKeyboardMarkup[
-    [
+BUTTONS = InlineKeyboardMarkup(
+      [[
         InlineKeyboardButton("Repository📦", url=f"https://github.com/youtubeslgeekshow/sz-rose-bot"),
-        InlineKeyboardButton(
-            "Video info ", url=f"https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA"
-        ),
-    ],
-    [
+        InlineKeyboardButton("Video info ", url=f"https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA"),
+      ],[
         InlineKeyboardButton("𝑺𝒍 𝑩𝒐𝒕 𝒁𝒐𝒏𝒆 ✍️", url="https://t.me/SL_bot_zone"),
-        InlineKeyboardButton(
-            "𝓢𝓛 𝓑𝓸𝓽 𝓒𝓱𝓪𝓽💬", url="https://t.me/slbotzone"
-        ),
-    ],
-    [
+        InlineKeyboardButton("𝓢𝓛 𝓑𝓸𝓽 𝓒𝓱𝓪𝓽💬", url="https://t.me/slbotzone"),
+      ],[
         InlineKeyboardButton("rosebot update info👁‍🗨", url="https://t.me/szroseupdates"),
-        InlineKeyboardButton(
-            "Developer 👨‍💻", url="https://t.me/supunmabot"
-        ),
-    ],
-]
+        InlineKeyboardButton("Developer 👨‍💻", url="https://t.me/supunmabot"),
+      ]]
+    )
+  
   
 @pbot.on_message(filters.command(["repo"]))
 async def repo(pbot, update):
