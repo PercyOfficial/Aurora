@@ -1,7 +1,7 @@
 import asyncio
 import sys
 
-from motor import motor_asyncio
+from  motor_tornado import *
 
 from DewmiBot import MONGO_DB_URI 
 from pymongo import MongoClient
