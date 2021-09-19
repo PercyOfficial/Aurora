@@ -5,7 +5,7 @@ from pyrogram.types import *
 from DewmiBot.config import get_str_key
 from DewmiBot import pbot
 
-REPO_TEXT = "**A Powerful BOT to Make Your Groups Secured and Organized ! ✨**\n\n🌟 Project by `@szroseupdates`"
+REPO_TEXT = "**A Powerful BOT to Make Your Groups Secured and Organized ! \n\n↼ Øwñêr ⇀ : 『 @supunmabot 』\n╭──────────────\n┣─ » Python ~ 3.8.6\n┣─ » Update ~ Resently\n╰──────────────\n\n»»» @szrosebot «««"
   
 BUTTONS = InlineKeyboardMarkup(
       [[
