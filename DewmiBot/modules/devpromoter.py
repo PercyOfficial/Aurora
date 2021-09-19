@@ -367,23 +367,6 @@ def devlist(bot: Bot, update: Update):
     update.effective_message.reply_text(reply, parse_mode=ParseMode.HTML)
 
 
-__help__ = """
-*Bot owner only:*
- - /addsudo: promotes the user to Sudo User
- - /removesudo: demotes the user from Sudo User
- - /addsupport: promotes the user to Support User
- - /removesupport: demotes the user from Support User
- - /addwhitelist: promotes the user to Whitelist User
- - /removewhitelist: demotes the user from Whitelist User
- 
- Bot Admin Lists
- - /whitelistlist - List whitelisted users.
- - /supportlist - List support users.
- - /sudolist - List sudo users.
- - /devlist - List dev users.
-"""
-__mod_name__ = "DEV.PROMOTER"
-
 SUDO_HANDLER = CommandHandler(("addsudo"), addsudo, pass_args=True)
 SUPPORT_HANDLER = CommandHandler(("addsupport"), addsupport, pass_args=True)
 WHITELIST_HANDLER = CommandHandler(("addwhitelist"), addwhitelist, pass_args=True)
