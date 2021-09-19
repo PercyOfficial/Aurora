@@ -7,7 +7,7 @@ from DewmiBot import pbot
 
 REPO_TEXT = "**Rose bot ✨** - **All Linked Channels/Repository/Social media**"
   
-BUTTONS = InlineKeyboardMarkup[
+BUTTONS = InlineKeyboardMarkup(
     [
         InlineKeyboardButton(text="Repository📦", url=f"https://github.com/youtubeslgeekshow/sz-rose-bot"),
         InlineKeyboardButton(
@@ -26,7 +26,7 @@ BUTTONS = InlineKeyboardMarkup[
             text="Developer 👨‍💻", url="https://t.me/supunmabot"
         ),
     ],
-]
+)
 
 @pbot.on_message(filters.command(["repo"]))
 async def repo(pbot, update):
