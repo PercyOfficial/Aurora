@@ -136,7 +136,7 @@ def G5(g5indexx):
 
 # AL result Command
  
-@pot.on_message(filters.command(['/al']))
+@pbot.on_message(filters.command(['/al']))
 async def ALresult(pbot,event):
     indexx=str(event.raw_text).split(' ')
     print(indexx)
@@ -146,7 +146,7 @@ async def ALresult(pbot,event):
 
 #Ol Result Command
 
-@pot.on_message(filters.command(['/ol']))
+@pbot.on_message(filters.command(['/ol']))
 async def OLresult(pbot,event):
     olindexx=str(event.raw_text).split(' ')
     print(olindexx)
@@ -156,7 +156,7 @@ async def OLresult(pbot,event):
 
 #Grade 5 Scholarship Command
 
-@pot.on_message(filters.command(['/g5']))
+@pbot.on_message(filters.command(['/g5']))
 async def G5result(pbot,event):
     g5indexx=str(event.raw_text).split(' ')
     print(g5indexx)
