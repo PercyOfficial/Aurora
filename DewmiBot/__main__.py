@@ -238,7 +238,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Info", callback_data="stats_callback")]],
+                [[InlineKeyboardButton(text="Updates", url="https://t.me/SL_bot_zone")]],
             ),
         )
     
@@ -535,19 +535,13 @@ def get_help(update, context):
             )
             return
         update.effective_message.reply_text(
-            "**Heya! I'am Rose - a group management bot here to help you manage your groups as effectively as possible**.\n\n**Contact me in PM to get the list of possible commands.**",
+            "Contact me in PM for help!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help and commands",
-                            callback_data="help_back",
-                        )
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="Video play help",
-                            url="https://t.me/SL_bot_zone/507",
+                            text="Click me for help!",
+                            url="https://t.me/szrosebot",
                         )
                     ],
                 ]
