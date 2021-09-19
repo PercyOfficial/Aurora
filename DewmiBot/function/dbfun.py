@@ -1,6 +1,9 @@
-from DewmiBot.mongo import db
+from DewmiBot import MONGO_DB_URI
 from typing import Dict, List, Union
 
+client = MongoClient()
+client = MongoClient(MONGO_DB_URI)
+db = client["DewmiBot"]
 
 coupledb = db.couple
 karmadb = db.karma
