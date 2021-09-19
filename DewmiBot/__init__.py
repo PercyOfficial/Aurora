@@ -2,8 +2,8 @@ import logging
 import os
 import sys
 import time
-
 import spamwatch
+
 import telegram.ext as tg
 from pyrogram import Client, errors
 from telethon import TelegramClient
@@ -156,6 +156,7 @@ else:
     API_HASH = Config.API_HASH
 
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
+    MONGO_DB_URI = Config.MONGO_DB_URI
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
     NO_LOAD = Config.NO_LOAD
