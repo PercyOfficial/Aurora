@@ -89,7 +89,7 @@ DONATE_STRING = """
 """
 STICKERS = "CAACAgUAAx0CS6YhoQAC02VhQUW7iB4ci3lcSXHtLVOjFzZlDQACUQMAAvPvEVY76k2QN6u20iAE"   
 
-rose = "🎯Updates:- @sl_bot_zone"
+TEXT = "🎯Updates:- @sl_bot_zone"
 
 BUTTONS = [
     [
@@ -238,7 +238,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Updates", url="https://t.me/SL_bot_zone")]],
+                [[InlineKeyboardButton(text="Updates", callback_data="repo")]],
             ),
         )
     
@@ -503,12 +503,13 @@ def DewmiBot_about_callback(update, context):
                 ]
             ),
         )
-        
-@pbot.on_callback_query(Filters.regex("stats_callback"))
-async def stats_callbacc(_, CallbackQuery):
-    text = rose
-    await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)
-            
+@pbot.on_callback_query(Filters.regex("repo"))
+async def repo(_, CallbackQuery):
+    await CallbackQuery.reply_text(
+        text=TEXT,
+        show_alert=True,
+        quote=True
+    )                
 @run_async
 @typing_action
 def get_help(update, context):
