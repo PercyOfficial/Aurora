@@ -9,7 +9,6 @@ from telegram.ext import CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
 from DewmiBot import dispatcher, WOLVES, DEMONS, DRAGONS, DEV_USERS, OWNER_ID
-from cinderella import dispatcher, WHITELIST_USERS, SUPPORT_USERS, SUDO_USERS, DEV_USERS, OWNER_ID
 from DewmiBot.modules.helper_funcs.chat_status import whitelist_plus, dev_plus
 from DewmiBot.modules.helper_funcs.extraction import extract_user
 from DewmiBot.modules.log_channel import gloggable
