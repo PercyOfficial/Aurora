@@ -59,7 +59,7 @@ wget
 fake-useragent
 asyncio
 youtube_dl
-motor
+
 glitch_this
 NumPy
 opencv-python-headless
@@ -74,4 +74,4 @@ tswift
 youtube_search
 fontTools
 asyncio
-
+motor_tornado
