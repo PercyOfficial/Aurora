@@ -14,11 +14,10 @@
 # You should have received a copy of the Apache License 2.0 License
 # along with this program.  If not, see <https://www.apache.org/licenses/LICENSE-2.0/>.
 
-import os
-from pyrogram import Client, filters
-from pyrogram.types import *
+
+from telethon import TelegramClient, events
 import requests
-from DewmiBot import pbot
+from telethon import tbot
 from DewmiBot.config import get_str_key
 
 
@@ -135,9 +134,9 @@ def G5(g5indexx):
     return textt
 
 # AL result Command
- 
-@pbot.on_message(filters.command(['/al']))
-async def ALresult(pbot,event):
+
+@tbot.on(events.NewMessage(pattern='/al'))
+async def ALresult(event):
     indexx=str(event.raw_text).split(' ')
     print(indexx)
     await event.respond(Al(indexx[1]),parse_mode='html')
@@ -146,8 +145,8 @@ async def ALresult(pbot,event):
 
 #Ol Result Command
 
-@pbot.on_message(filters.command(['/ol']))
-async def OLresult(pbot,event):
+@tbot.on(events.NewMessage(pattern='/ol'))
+async def OLresult(event):
     olindexx=str(event.raw_text).split(' ')
     print(olindexx)
     await event.respond(Ol(olindexx[1]),parse_mode='html')
@@ -156,8 +155,8 @@ async def OLresult(pbot,event):
 
 #Grade 5 Scholarship Command
 
-@pbot.on_message(filters.command(['/g5']))
-async def G5result(pbot,event):
+@tbot.on(events.NewMessage(pattern='/g5'))
+async def G5result(event):
     g5indexx=str(event.raw_text).split(' ')
     print(g5indexx)
     await event.respond(G5(g5indexx[1]),parse_mode='html')
