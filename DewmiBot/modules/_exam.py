@@ -14,9 +14,9 @@
 # You should have received a copy of the Apache License 2.0 License
 # along with this program.  If not, see <https://www.apache.org/licenses/LICENSE-2.0/>.
 
-
-
-from telethon import TelegramClient, events
+import os
+from pyrogram import Client, filters
+from pyrogram.types import *
 import requests
 from DewmiBot import pbot
 from DewmiBot.config import get_str_key
