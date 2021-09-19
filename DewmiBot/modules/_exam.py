@@ -17,9 +17,8 @@
 
 from telethon import TelegramClient, events
 import requests
-from telethon import tbot
 from DewmiBot.config import get_str_key
-
+from DewmiBot import telethon as tbot
 
 def Al(indexx):
     print(indexx)
