@@ -128,6 +128,7 @@ __help__ = """
  ❍  /attendance :Start the attendance
  ❍  /end_attendance : End the attendance
 """
+__mod_name__ = "Attendance"
 
 START_ATTENDANCE = DisableAbleCommandHandler("attendance", start_attendance)
 MARK_ATTENDANCE = CallbackQueryHandler(mark_attendance, pattern="present")
@@ -139,6 +140,6 @@ dispatcher.add_handler(MARK_ATTENDANCE)
 dispatcher.add_handler(END_ATTENDANCE)
 dispatcher.add_handler(END_ATTENDANCE_CMD)
 
-__mod_name__ = "Attendance"
+
 __command_list__ = ["attendance", "end_attendance"]
 __handlers__ = [START_ATTENDANCE, END_ATTENDANCE, END_ATTENDANCE_CMD]
