@@ -17,19 +17,9 @@
 
 
 from telethon import TelegramClient, events
-import json
 import requests
 from DewmiBot import pbot
 from DewmiBot.config import get_str_key
-
-
-
-bot = TelegramClient('bot', APP_ID, APP_HASH).start(bot_token=BOTT)
-
-
-
-
-
 
 
 def Al(indexx):
