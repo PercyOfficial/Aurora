@@ -1,4 +1,4 @@
-from DewmiBot import pbot as app
+from DewmiBot import pbot 
 from DewmiBot.utils.errors import capture_err
 from DewmiBot.function.dbfun import (
     update_karma,
@@ -15,7 +15,7 @@ regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|go
 regex_downvote = r"^(\-|\-\-|\-1|👎)$"
 
 
-@app.on_message(
+@pbot.on_message(
     filters.text
     & filters.group
     & filters.incoming
@@ -48,7 +48,7 @@ async def upvote(_, message):
     )
 
 
-@app.on_message(
+@pbot.on_message(
     filters.text
     & filters.group
     & filters.incoming
@@ -81,7 +81,7 @@ async def downvote(_, message):
     )
 
 
-@app.on_message(filters.command("karma") & filters.group)
+@pbot.on_message(filters.command("karma") & filters.group)
 @capture_err
 async def karma(_, message):
     chat_id = message.chat.id
