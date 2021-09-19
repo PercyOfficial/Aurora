@@ -18,7 +18,7 @@
 from telethon import TelegramClient, events
 import requests
 from DewmiBot.config import get_str_key
-from DewmiBot import telethon as tbot
+from DewmiBot import pbot
 
 def Al(indexx):
     print(indexx)
@@ -134,7 +134,7 @@ def G5(g5indexx):
 
 # AL result Command
 
-@tbot.on(events.NewMessage(pattern='/al'))
+@pbot.on(events.NewMessage(pattern='/al'))
 async def ALresult(event):
     indexx=str(event.raw_text).split(' ')
     print(indexx)
@@ -144,7 +144,7 @@ async def ALresult(event):
 
 #Ol Result Command
 
-@tbot.on(events.NewMessage(pattern='/ol'))
+@pbot.on(events.NewMessage(pattern='/ol'))
 async def OLresult(event):
     olindexx=str(event.raw_text).split(' ')
     print(olindexx)
@@ -154,7 +154,7 @@ async def OLresult(event):
 
 #Grade 5 Scholarship Command
 
-@tbot.on(events.NewMessage(pattern='/g5'))
+@pbot.on(events.NewMessage(pattern='/g5'))
 async def G5result(event):
     g5indexx=str(event.raw_text).split(' ')
     print(g5indexx)
