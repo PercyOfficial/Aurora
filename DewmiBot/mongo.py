@@ -2,6 +2,7 @@ import asyncio
 import sys
 
 from motor import motor_asyncio
+
 from DewmiBot import MONGO_DB_URI 
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
