@@ -2,7 +2,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import *
 
-from DewmiBot.config import get_str_key
+DewmiBot.config import get_str_key
 from DewmiBot import pbot
 
 TEXT = "Click A Button To Get Started.👋 This is szrosebot inline „\nAn Advanced Inline  Bot For All Your Needs !!\n\n↼ Øwñêr ⇀ : 『 @supunmabot 』\n╭──────────────\n┣─ » Python ~ 3.8.6\n┣─ » Update ~ Recently\n╰──────────────\n\n»»» @szrosebot «««"
@@ -59,3 +59,28 @@ async def inline(pbot, update):
         disable_web_page_preview=True,
         quote=True
     )
+
+@pbot.on_inline_query()
+async def line(client: Client, query: InlineQuery):
+    answers = []
+    search_query = query.query.lower().strip().rstrip()
+
+    if search_query == "menu":
+        await client.answer_inline_query(
+            query.id,
+            results=menus,
+            switch_pm_text="Menu",
+            switch_pm_parameter="help",
+            cache_time=0,
+        )
+
+
+# ==================#
+# Testing plugin 
+
+menus = [
+    InlineQueryResultArticle(title="Inline commands", description="Inline commands",
+                             input_message_content=InputTextMessageContent("/inline")),
+    InlineQueryResultArticle(title="Start Bot", description="Start Szrosebot",
+                             input_message_content=InputTextMessageContent("/start")),
+]
