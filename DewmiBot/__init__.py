@@ -100,6 +100,7 @@ if ENV:
     log = os.environ.get("log", "-1001589738293")
     OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", None)
     BOT_ID = os.environ.get("BOT_ID", None)  
+    CHROME_BIN = os.environ.get("CHROME_BIN", None)  
     
     try:
         WHITELIST_CHATS = set(
