@@ -5,6 +5,8 @@ from pyrogram.types import *
 from DewmiBot.config import get_str_key
 from DewmiBot import pbot
 
+TEXT = " Inline button "
+
 BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton("Alive", switch_inline_query="alive"),
@@ -50,8 +52,9 @@ BUTTONS = InlineKeyboardMarkup(
     )
 
 @pbot.on_message(filters.command(["inline"]))
-async def calculate(pbot, update):
+async def inline(pbot, update):
     await update.reply_text(
+        text=TEXT,    
         reply_markup=BUTTONS,
         disable_web_page_preview=True,
         quote=True
