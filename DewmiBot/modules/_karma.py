@@ -95,7 +95,7 @@ async def karma(_, message):
             karma_arranged = dict(
                 sorted(karma_dicc.items(), key=lambda item: item[1], reverse=True)
             )
-        for user_idd, karma_count in karma_arranged.items():
+        for user_idd, karma_count in karma_dicc.items():
             if limit > 9:
                 break
             try:
