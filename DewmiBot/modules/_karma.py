@@ -13,6 +13,9 @@ from pyrogram import filters
 regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|👍)$"
 regex_downvote = r"^(\-|\-\-|\-1|👎)$"
 
+TEXT = "Added This Chat To Database. Karma will be enabled here"
+
+TEX = "Removed This Chat To Database. Karma will be disabled here"
 
 @pbot.on_message(
     filters.text
@@ -113,25 +116,19 @@ async def karma(_, message):
         else:
             karma = 0
             await message.reply_text(f"**Total Points**: __{karma}__")
-     return
-    status = message.text.split(None, 1)[1].strip()
-    status = status.lower()
-    chat_id = message.chat.id
-    user_id = message.from_user.id
-    permissions = await member_permissions(chat_id, user_id)
-    if "can_change_info" not in permissions:
-        await message.reply_text("You don't have enough permissions.")
-        return
-    if status == "on" or status == "ON":
-        await karma_on(chat_id)
-        await message.reply_text(
-            f"Added Chat {chat_id} To Database. Karma will be enabled here"
-        )
-    elif status == "off" or status == "OFF":
-        await karma_off(chat_id)
-        await message.reply_text(
-            f"Removed Chat {chat_id} To Database. Karma will be disabled here"
-        )
+            
+@pbot.on_message(filters.command(["karma on"]))
+async def karma on(pbot, update):
+    await update.reply_text(
+        text=TEXT,
+        quote=True
+    ) 
+@pbot.on_message(filters.command(["karma off"]))
+async def karma off(pbot, update):
+    await update.reply_text(
+        text=TEX,
+        quote=True
+    )     
 
 __help__ = """
 @szrosebot🇱🇰
