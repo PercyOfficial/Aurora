@@ -4,7 +4,7 @@ from pyrogram.types import *
 
 from DewmiBot import pbot
 
-TEXT = "Click A Button To Get Started.👋 This is Natsuki inline „\nAn Advanced Inline  Bot For All Your Needs !!\n\n↼ Øwñêr ⇀ : 『 @Darkridersslk 』\n╭──────────────\n┣─ » Python ~ 3.8.6\n┣─ » Update ~ Recently\n╰──────────────\n\n»»» @TheNatsukiBot «««"
+TEXT = "Click A Button To Get Started.👋 This is Rose inline „\nAn Advanced Inline  Bot For All Your Needs !!\n\n↼ Øwñêr ⇀ : 『 @SupunMa 』\n╭──────────────\n┣─ » Python ~ 3.8.6\n┣─ » Update ~ Recently\n╰──────────────\n\n»»» @SzRoseBot «««"
 
 BUTTONS = InlineKeyboardMarkup(
         [[
