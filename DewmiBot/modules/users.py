@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import DewmiBot.modules.sql.users_sql as sql
-from DewmiBot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from DewmiBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from DewmiBot.modules.sql.users_sql import get_all_users
+import KanekiRobot.modules.sql.users_sql as sql
+from KanekiRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from KanekiRobot.modules.helper_funsc.chat_status import dev_plus, sudo_plus
+from KanekiRobot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
@@ -128,7 +128,7 @@ def chats(update: Update, context: CallbackContext):
     for chat in all_chats:
         try:
             curr_chat = context.bot.getChat(chat.chat_id)
-            curr_chat.get_member(context.bot.id)
+            bot_member = curr_chat.get_member(context.bot.id)
             chat_members = curr_chat.get_members_count(context.bot.id)
             chatfile += "{}. {} | {} | {}\n".format(
                 P, chat.chat_name, chat.chat_id, chat_members
@@ -187,5 +187,5 @@ dispatcher.add_handler(BROADCAST_HANDLER)
 dispatcher.add_handler(CHATLIST_HANDLER)
 dispatcher.add_handler(CHAT_CHECKER_HANDLER, CHAT_GROUP)
 
-__mod_name__ = "Users"
+__mod_name__ = "ᴜsᴇʀs"
 __handlers__ = [(USER_HANDLER, USERS_GROUP), BROADCAST_HANDLER, CHATLIST_HANDLER]
