@@ -64,12 +64,11 @@ async def line(client: Client, query: InlineQuery):
     answers = []
     search_query = query.query.lower().strip().rstrip()
 
-    if search_query == "menu":
+    if search_query == "menus":
         await client.answer_inline_query(
             query.id,
-            results=menus,
-            switch_pm_text="Menu",
-            switch_pm_parameter="help",
+            results=menus,            
+            switch_pm_text={menus},
             cache_time=0,
         )
 
