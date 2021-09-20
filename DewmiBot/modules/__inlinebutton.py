@@ -2,7 +2,6 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import *
 
-DewmiBot.config import get_str_key
 from DewmiBot import pbot
 
 TEXT = "Click A Button To Get Started.👋 This is szrosebot inline „\nAn Advanced Inline  Bot For All Your Needs !!\n\n↼ Øwñêr ⇀ : 『 @supunmabot 』\n╭──────────────\n┣─ » Python ~ 3.8.6\n┣─ » Update ~ Recently\n╰──────────────\n\n»»» @szrosebot «««"
