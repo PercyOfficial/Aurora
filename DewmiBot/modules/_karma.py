@@ -113,7 +113,26 @@ async def karma(_, message):
         else:
             karma = 0
             await message.reply_text(f"**Total Points**: __{karma}__")
-            
+     return
+    status = message.text.split(None, 1)[1].strip()
+    status = status.lower()
+    chat_id = message.chat.id
+    user_id = message.from_user.id
+    permissions = await member_permissions(chat_id, user_id)
+    if "can_change_info" not in permissions:
+        await message.reply_text("You don't have enough permissions.")
+        return
+    if status == "on" or status == "ON":
+        await karma_on(chat_id)
+        await message.reply_text(
+            f"Added Chat {chat_id} To Database. Karma will be enabled here"
+        )
+    elif status == "off" or status == "OFF":
+        await karma_off(chat_id)
+        await message.reply_text(
+            f"Removed Chat {chat_id} To Database. Karma will be disabled here"
+        )
+
 __help__ = """
 @szrosebot🇱🇰
 [UPVOTE] - Use upvote keywords like "+", "+1", "thanks" etc to upvote a cb.message.
