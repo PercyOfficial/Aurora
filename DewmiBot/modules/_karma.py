@@ -117,14 +117,14 @@ async def karma(_, message):
             karma = 0
             await message.reply_text(f"**Total Points**: __{karma}__")
             
-@pbot.on_message(filters.command(["karmaon"]))
-async def karma on(pbot, update):
+@pbot.on_message(filters.command(["karma on"]))
+async def karmaon(pbot, update):
     await update.reply_text(
         text=TEXT,
         quote=True
     ) 
-@pbot.on_message(filters.command(["karmaoff"]))
-async def karma off(pbot, update):
+@pbot.on_message(filters.command(["karma off"]))
+async def karmaff(pbot, update):
     await update.reply_text(
         text=TEX,
         quote=True
