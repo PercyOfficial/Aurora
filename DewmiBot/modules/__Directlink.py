@@ -88,4 +88,4 @@ __help__ = """
 @szrosebot🇱🇰
  ❍ /direct - get any file useing link
 """
-__mod_name__ = "virus"
+__mod_name__ = "Direct link"
