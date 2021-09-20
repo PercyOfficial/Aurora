@@ -1,4 +1,5 @@
 from DewmiBot import pbot 
+import random
 from DewmiBot.function.dbfun import (
     update_karma,
     get_karma,
@@ -117,24 +118,18 @@ async def karma(_, message):
             
             
             
-TEXT = "Added This Chat To Database. Karma will be enabled here"
-
-TEX = "Removed This Chat To Database. Karma will be disabled here"           
-            
-            
-@pbot.on_message(filters.command(["karma on"]))
+TEXT = ("Added This Chat To Database. Karma will be enabled here",
+        "Removed This Chat To Database. Karma will be disabled here"   
+       )
+        
+                       
+@pbot.on_message(filters.command(["karma"]))
 async def karmaon(pbot, update):
-    await update.reply_text(
+    await update.reply_text(random.choice(
         text=TEXT,
         quote=True
-    ) 
-    
-@pbot.on_message(filters.command(["karma off"]))
-async def karmaff(pbot, update):
-    await update.reply_text(
-        text=TEX,
-        quote=True
-    )     
+    )) 
+        
 
 __help__ = """
 @szrosebot🇱🇰
