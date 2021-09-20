@@ -48,24 +48,8 @@
 - [Group Menter](https://github.com/TeamGroupMenter/GroupMenter)
 
 
-##  deploy to Heroku 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/youtubeslgeekshow/sz-rose-bot)  
-     
-## VPS Deployment
-```
-- sudo apt update && ugrade -y
-- sudo apt install python3-pip -y virtualenv
-- sudo apt install ffmpeg -y
-- git clone https://github.com/youtubeslgeekshow/sz-rose-bot  #Clone your repo.
-- cd szrosebot
-- virtualenv env #Create Virtual Environment.
-- source env/bin/activate #Activate Virtual Environment
-- pip3 install --upgrade pip
-- pip3 install -U -r requirements.txt
-- sudo nano config.py #Fill it with your variables value.
-- python3 -m DewmiBot
-```
+# Don't Deploy this 
 
  ## New Features Updated 😊
     
