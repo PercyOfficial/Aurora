@@ -364,7 +364,7 @@ def devlist(bot: Bot, update: Update):
             reply += f"• {mention_html(user_id, user.first_name)}\n"
         except TelegramError:
             pass
-    update.effective_message.reply_text(reply, parse_mode=ParseMode.HTML)
+    update.message.reply_text(reply, parse_mode=ParseMode.HTML)
 
 
 SUDO_HANDLER = CommandHandler(("addsudo"), addsudo, pass_args=True)
