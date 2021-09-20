@@ -117,13 +117,13 @@ async def karma(_, message):
             karma = 0
             await message.reply_text(f"**Total Points**: __{karma}__")
             
-@pbot.on_message(filters.command(["karma on"]))
+@pbot.on_message(filters.command(["karmaon"]))
 async def karma on(pbot, update):
     await update.reply_text(
         text=TEXT,
         quote=True
     ) 
-@pbot.on_message(filters.command(["karma off"]))
+@pbot.on_message(filters.command(["karmaoff"]))
 async def karma off(pbot, update):
     await update.reply_text(
         text=TEX,
@@ -135,7 +135,7 @@ __help__ = """
 [UPVOTE] - Use upvote keywords like "+", "+1", "thanks" etc to upvote a cb.message.
 [DOWNVOTE] - Use downvote keywords like "-", "-1", etc to downvote a cb.message.
 
-❍ /karma [ON/OFF]: Enable/Disable karma in group. 
+❍ /karma[ON/OFF]: Enable/Disable karma in group. (don't give space)
 ❍ /karma [Reply to a message]: Check user's karma
 ❍ /karma: Chek karma list of top 10 users
 
