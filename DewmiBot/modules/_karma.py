@@ -123,6 +123,7 @@ async def karmaon(pbot, update):
         text=TEXT,
         quote=True
     ) 
+    
 @pbot.on_message(filters.command(["karma off"]))
 async def karmaff(pbot, update):
     await update.reply_text(
