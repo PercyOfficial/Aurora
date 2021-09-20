@@ -13,9 +13,6 @@ from pyrogram import filters
 regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|good|👍)$"
 regex_downvote = r"^(\-|\-\-|\-1|👎)$"
 
-TEXT = "Added This Chat To Database. Karma will be enabled here"
-
-TEX = "Removed This Chat To Database. Karma will be disabled here"
 
 @pbot.on_message(
     filters.text
@@ -116,6 +113,14 @@ async def karma(_, message):
         else:
             karma = 0
             await message.reply_text(f"**Total Points**: __{karma}__")
+
+            
+            
+            
+TEXT = "Added This Chat To Database. Karma will be enabled here"
+
+TEX = "Removed This Chat To Database. Karma will be disabled here"           
+            
             
 @pbot.on_message(filters.command(["karma on"]))
 async def karmaon(pbot, update):
