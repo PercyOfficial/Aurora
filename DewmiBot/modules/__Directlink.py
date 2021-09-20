@@ -84,4 +84,8 @@ def useragent():
     return user_agent.text
 
 
-__help__ = True
+__help__ = """
+@szrosebot🇱🇰
+ ❍ /direct - get any file useing link
+"""
+__mod_name__ = "virus"
