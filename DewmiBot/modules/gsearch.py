@@ -1,7 +1,7 @@
 
 from bs4 import BeautifulSoup
 import urllib
-from Natsuki import telethn as tbot
+from DewmiBot import telethn as tbot
 import glob
 import io
 import os
