@@ -51,6 +51,9 @@
 
 # Don't Deploy this 
 
+# 🏃‍♂️ Easy Deploy 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/youtubeslgeekshow/sz-rose-bot.git)
+    
  ## New Features Updated 😊
     
     
