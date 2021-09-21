@@ -6,7 +6,7 @@ from functools import wraps
 
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
-from DewmiBot import JOIN_LOGGER, app
+from DewmiBot import JOIN_LOGGER, pbot
 
 def split_limits(text):
     if len(text) < 2048:
@@ -33,7 +33,7 @@ def capture_err(func):
         try:
             return await func(client, message, *args, **kwargs)
         except ChatWriteForbidden:
-            await app.leave_chat(message.chat.id)
+            await pbot.leave_chat(message.chat.id)
             return
         except Exception as err:
             exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -51,7 +51,7 @@ def capture_err(func):
                 ),
             )
             for x in error_feedback:
-                await app.send_message(LOG_GROUP_ID, x)
+                await pbot.send_message(JOIN_LOGGER, x)
             raise err
 
     return 
