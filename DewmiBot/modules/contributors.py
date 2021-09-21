@@ -1,6 +1,7 @@
 import github  # pyGithub
 from pyrogram import filters
-
+from pyrogram.types import InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup
 from DewmiBot.services.pyrogram import pbot as client
 
 koyboard = InlineKeyboardMarkup(
