@@ -2,6 +2,8 @@ import html
 import time
 from datetime import datetime
 from io import BytesIO
+from pyrogram.types import InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup
 
 from telegram import ParseMode, Update
 from telegram.error import BadRequest, TelegramError, Unauthorized
