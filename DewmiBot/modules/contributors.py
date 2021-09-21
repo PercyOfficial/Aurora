@@ -3,7 +3,17 @@ from pyrogram import filters
 
 from DewmiBot.services.pyrogram import pbot as client
 
-
+koyboard = InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("{co}", url=f'{co}'),
+                        InlineKeyboardButton("{co}", url=f'{co}'),
+                        InlineKeyboardButton("{co}", url=f'{co}'),
+                    ],
+                    [InlineKeyboardButton("Bot", url="cls")],    
+                ]
+            )       
+    
 @client.on_message(filters.command("contributors") & ~filters.edited)
 async def give_cobtribs(c, m):
     g = github.Github()
@@ -14,7 +24,7 @@ async def give_cobtribs(c, m):
         n += 1
         co += f"{n}. [{i.login}](https://github.com/{i.login})\n"
     t = f"**Szrosebot Contributors**\n\n{co}"
-    await m.reply(t, disable_web_page_preview=False)
+    await m.reply(t, reply_markup=koyboard, disable_web_page_preview=True)
     
 __help__ = """
 @szrosebot🇱🇰
