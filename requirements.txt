@@ -80,7 +80,7 @@ google_trans_new
 
 redis
 aioredis==1.3.1 # Redis memery storage fom aiogram
-motor
+motor_tornado 
 odmantic # MongoDB ORM
 sqlalchemy==1.3.20 # For old modules
 dnspython # needed to connect to cloud MongoDB instances
