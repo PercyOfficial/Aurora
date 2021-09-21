@@ -6,7 +6,7 @@ from functools import wraps
 
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
-from DewmiBot import LOG_GROUP_ID, app
+from DewmiBot import JOIN_LOGGER, app
 
 def split_limits(text):
     if len(text) < 2048:
