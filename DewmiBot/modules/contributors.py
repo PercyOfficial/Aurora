@@ -7,9 +7,9 @@ from DewmiBot.services.pyrogram import pbot as client
 koyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("{co}", url=f'{co}'),
-                        InlineKeyboardButton("{co}", url=f'{co}'),
-                        InlineKeyboardButton("{co}", url=f'{co}'),
+                        InlineKeyboardButton("Dev", url=f'{co}'),
+                        InlineKeyboardButton("Dev", url=f'{co}'),
+                        InlineKeyboardButton("Dev", url=f'{co}'),
                     ],
                     [InlineKeyboardButton("Bot", url="cls")],    
                 ]
