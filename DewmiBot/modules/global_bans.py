@@ -494,7 +494,6 @@ def gbanstat(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Updates", url ="https://t.me/szroseupdates")]],
             ),
-        )
         elif args[0].lower() in ["off", "no"]:
             sql.disable_gbans(update.effective_chat.id)
             update.effective_message.reply_text(
@@ -504,7 +503,6 @@ def gbanstat(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Updates", url ="https://t.me/szroseupdates")]],
             ),
-        )
     else:
         update.effective_message.reply_text(
             "Give me some arguments to choose a setting! on/off, yes/no!\n\n"
