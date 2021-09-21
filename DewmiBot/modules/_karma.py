@@ -80,12 +80,15 @@ async def downvote(_, message):
 
 
 @pbot.on_message(filters.command("karma") & filters.group)
-async def karma(_, message):
+async def command_karma(_, message):
     chat_id = message.chat.id
-
+    
     if not message.reply_to_message:
+        m = await message.reply_text("Analyzing Karma...")
         karma = await get_karmas(chat_id)
-        msg = f"**Karma list of {message.chat.title}:- **\n"
+        if not karma:
+            return await m.edit("No karma in DB for this chat.")
+        msg = f"Karma list of {message.chat.title}"
         limit = 0
         karma_dicc = {}
         for i in karma:
@@ -93,19 +96,29 @@ async def karma(_, message):
             user_karma = karma[i]["karma"]
             karma_dicc[str(user_id)] = user_karma
             karma_arranged = dict(
-                sorted(karma_dicc.items(), key=lambda item: item[1], reverse=True)
+                sorted(
+                    karma_dicc.items(),
+                    key=lambda item: item[1],
+                    reverse=True,
+                )
             )
-        for user_idd, karma_count in karma_dicc.items():
-            if limit > 9:
+        if not karma_dicc:
+            return await m.edit("No karma in DB for this chat.")
+        userdb = await get_user_id_and_usernames(app)
+        karma = {}
+        for user_idd, karma_count in karma_arranged.items():
+            if limit > 15:
                 break
-            try:
-                user_name = (await app.get_users(int(user_idd))).username
-            except Exception:
+            if int(user_idd) not in list(userdb.keys()):
                 continue
-            msg += f"{user_name} : `{karma_count}`\n"
+            username = userdb[int(user_idd)]
+            karma[karma_count] = ["@" + username]
             limit += 1
-        await message.reply_text(msg)
+        await m.edit(section(msg, karma))
     else:
+        if not message.reply_to_message.from_user:
+            return await message.reply("Anon user hash no karma.")
+
         user_id = message.reply_to_message.from_user.id
         karma = await get_karma(chat_id, await int_to_alpha(user_id))
         if karma:
@@ -114,22 +127,7 @@ async def karma(_, message):
         else:
             karma = 0
             await message.reply_text(f"**Total Points**: __{karma}__")
-
-            
-            
-            
-TEXT = ("Added This Chat To Database. Karma will be enabled here",
-        "Removed This Chat To Database. Karma will be disabled here"   
-       )
-        
-                       
-@pbot.on_message(filters.command(["karma"]))
-async def karmaon(pbot, update):
-    await update.reply_text(random.choice(
-        text=TEXT,
-        quote=True
-    )) 
-        
+      
 
 __help__ = """
 @szrosebot🇱🇰
