@@ -1,10 +1,6 @@
 #Modified By Sadew Jayasekara<https://github.com/Sadew451>
 from pymongo import MongoClient
 
-client = MongoClient()
-client = MongoClient(MONGO_DB_URI)
-db = client["db_x"]
-
 lydia = db_x["CAHTBOT"]
 
 
