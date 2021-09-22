@@ -110,6 +110,20 @@ BUTTONS = [
         InlineKeyboardButton(text="🧰 Help & commands 🛠 ", callback_data="help_back"),
     ],
 ]
+
+TEXT = """👋 Hey there! My name is Rose bot ✨ - A powerful group management bot which can help you to manage your groups effectively as possible With   Advanced AI . 
+
+Click `menu` button for more information.
+
+Join my [news channel](https://t.me/SL_bot_zone) to get information on all the latest updates.  """
+
+MENU = [
+    [
+        InlineKeyboardButton(
+            text="↪️ Main menu ", callback_data="aboutmanu_back"),
+    ],
+]
+
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
