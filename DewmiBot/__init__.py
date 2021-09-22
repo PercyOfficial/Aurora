@@ -99,7 +99,8 @@ if ENV:
     log = os.environ.get("log", "-1001589738293")
     OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", None)
     BOT_ID = os.environ.get("BOT_ID", None)  
- 
+    SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", "@SpamWatchSupport")
+    
     try:
         WHITELIST_CHATS = set(
             int(x) for x in os.environ.get("WHITELIST_CHATS", "").split()
