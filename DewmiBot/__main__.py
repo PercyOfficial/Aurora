@@ -238,6 +238,7 @@ def start(update: Update, context: CallbackContext):
                 TEXT,
                 reply_markup=InlineKeyboardMarkup(MENU),
                 parse_mode=ParseMode.MARKDOWN,
+               disable_web_page_preview=True,
             )
     else:
         update.effective_message.reply_text(
