@@ -47,7 +47,8 @@
 - [innexia](https://github.com/DarkCybers/innexia/tree/Sammy/innexiaBot)
 - [Daisyx](https://github.com/TeamDaisyX/DaisyX)
 - [Group Menter](https://github.com/TeamGroupMenter/GroupMenter)
-- [Percy_Official](https://github.com/Percy_Official)    
+- [Percy_Official](https://github.com/Percy_Official) ~ (Dev)
+    
 
 
 
