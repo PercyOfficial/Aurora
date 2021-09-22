@@ -69,7 +69,7 @@ RUN git clone -b shiken https://github.com/youtubeslgeekshow/sz-rose-bot /root/D
 WORKDIR /root/DewmiBot
 
 #Copy config file to /root/AnkiVector/AnkiVector
-COPY ./AnkiVector/sample_config.py ./AnkiVector/config.py* /root/DewmiBot/DewmiBot/
+COPY ./DewmiBot/sample_config.py ./AnkiVector/config.py* /root/DewmiBot/DewmiBot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
