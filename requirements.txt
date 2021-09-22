@@ -74,6 +74,3 @@ tswift
 youtube_search
 fontTools
 motor
-
-pygithub
-search_engine_parser
