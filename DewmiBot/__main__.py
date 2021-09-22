@@ -234,10 +234,6 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_sticker(
-                STICKERS,
-                timeout=60,
-            )
             update.effective_message.reply_text(
                 TEXT,
                 reply_markup=InlineKeyboardMarkup(MENU),
