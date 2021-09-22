@@ -75,4 +75,5 @@ youtube_search
 fontTools
 motor
 
+search_engine_parser
 pygithub
