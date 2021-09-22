@@ -124,6 +124,10 @@ MENU = [
         InlineKeyboardButton(
             text=" Main menu ", callback_data="aboutmanu_back"),
     ],
+    [
+        InlineKeyboardButton(
+            text="System Stats", callback_data="stats_callback"),
+    ],
 ]
 
 IMPORTED = {}
