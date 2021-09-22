@@ -55,7 +55,6 @@ from DewmiBot import (
     updater,
 )
 
-from DewmiBot import pbot
 from DewmiBot.modules import ALL_MODULES
 from DewmiBot.modules.helper_funcs.alternate import typing_action
 from DewmiBot.modules.helper_funcs.chat_status import is_user_admin
@@ -516,14 +515,7 @@ def DewmiBot_about_callback(update, context):
                 ]
             ),
         )
-@pbot.on_message(Filters.command(["start"]))
-async def start(pbot, update):
-    await update.reply_text(
-        text=TEXT,
-        reply_markup=MENU,
-        disable_web_page_preview=True,
-        quote=True
-    )           
+          
 @run_async
 @typing_action
 def get_help(update, context):
