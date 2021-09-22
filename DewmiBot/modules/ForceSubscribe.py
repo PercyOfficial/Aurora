@@ -175,9 +175,9 @@ def config(client, message):
         )
 
 __help__ = """
-@szrosebot🇱🇰
+@Aurora_x_bot
 *ForceSubscribe:*
-❍ RoseBot can mute members who are not subscribed your channel until they subscribe.
+❍ Aurora can mute members who are not subscribed your channel until they subscribe.
 ❍ When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them.
 
 *Setup*
@@ -187,7 +187,7 @@ Note: Only creator of the group can setup me and i will not allow force subscrib
  
 *Commmands*
 ❍ /ForceSubscribe - To get the current settings.
-❍ /ForceSubscribe no/off/disable - To turn of ForceSubscribe.
+❍ /ForceSubscribe no/off/disable - To turn off ForceSubscribe.
 ❍ /ForceSubscribe {channel username} - To turn on and setup the channel.
 ❍ /ForceSubscribe clear - To unmute all members who muted by me.
 
