@@ -2,8 +2,7 @@ import logging
 import os
 import sys
 import time
-
-__import__ spamwatch
+import spamwatch
 import telegram.ext as tg
 from pyrogram import Client, errors
 from telethon import TelegramClient
