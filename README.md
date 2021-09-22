@@ -19,8 +19,9 @@
 </a> <a href="https://t.me/Hermione_Official"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/Aurora_x_bot"><img src="https://img.shields.io/badge/Foundbot%20on-blue.svg?style=for-the-badge&logo=Telegram">
     
-   
+## Depoly To Heroku  
     
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/youtubeslgeekshow/sz-rose-bot)  
 
 
   
@@ -38,7 +39,7 @@
 
 ## Credits 🥰 
 
-    
+- [Percy_Official](https://github.com/Percy_Official) ~ (Dev)
 - [hirunaofficial](https://github.com/hirunaofficial)~ (DEV)
 - [Damantha126](https://github.com/Damantha126)~ (DEV)
 - [Sadew451](https://github.com/Sadew451) ~ (DEV)
@@ -47,7 +48,7 @@
 - [innexia](https://github.com/DarkCybers/innexia/tree/Sammy/innexiaBot)
 - [Daisyx](https://github.com/TeamDaisyX/DaisyX)
 - [Group Menter](https://github.com/TeamGroupMenter/GroupMenter)
-- [Percy_Official](https://github.com/Percy_Official) ~ (Dev)
+- [Park Seo Joon] 
     
 
 
