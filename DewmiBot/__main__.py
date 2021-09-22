@@ -55,6 +55,7 @@ from DewmiBot import (
     updater,
 )
 
+from DewmiBot import pbot
 from DewmiBot.modules import ALL_MODULES
 from DewmiBot.modules.helper_funcs.alternate import typing_action
 from DewmiBot.modules.helper_funcs.chat_status import is_user_admin
