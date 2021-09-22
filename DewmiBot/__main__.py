@@ -202,7 +202,7 @@ def test(update, context):
     print(update.effective_message)
 
 @run_async
-def tart(update: Update, context: CallbackContext):
+def start(update: Update, context: CallbackContext):
     args = context.args
     uptime = get_readable_time((time.time() - StartTime))
     if update.effective_chat.type == "private":
@@ -239,8 +239,8 @@ def tart(update: Update, context: CallbackContext):
                 timeout=60,
             )
             update.effective_message.reply_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(BUTTONS),
+                TEXT,
+                reply_markup=InlineKeyboardMarkup(MENU),
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
@@ -823,7 +823,7 @@ def main():
             LOGGER.warning(e.message)
 
     # test_handler = CommandHandler("test", test)
-    start_handler = CommandHandler("tart", tart, pass_args=True)
+    start_handler = CommandHandler("start", start, pass_args=True)
 
     help_handler = CommandHandler("help", get_help)
     help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_")
