@@ -1,5 +1,5 @@
-#Modified By Sadew Jayasekara<https://github.com/Sadew451>
-from DewmiBot.mongo import client as db_x
+
+from DewmiBot import MONGO_DB_URI
 from pymongo import MongoClient
 
 client = MongoClient()
