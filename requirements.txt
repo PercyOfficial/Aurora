@@ -84,3 +84,4 @@ odmantic # MongoDB ORM
 sqlalchemy==1.3.20 # For old modules
 dnspython # needed to connect to cloud MongoDB instances
 spamwatch==0.3.0
+telegram
