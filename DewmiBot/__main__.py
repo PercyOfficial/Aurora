@@ -202,7 +202,7 @@ def test(update, context):
     print(update.effective_message)
 
 @run_async
-def start(update: Update, context: CallbackContext):
+def tart(update: Update, context: CallbackContext):
     args = context.args
     uptime = get_readable_time((time.time() - StartTime))
     if update.effective_chat.type == "private":
@@ -515,7 +515,14 @@ def DewmiBot_about_callback(update, context):
                 ]
             ),
         )
-              
+@pbot.on_message(Filters.command(["start"]))
+async def start(pbot, update):
+    await update.reply_text(
+        text=TEXT,
+        reply_markup=MENU,
+        disable_web_page_preview=True,
+        quote=True
+    )           
 @run_async
 @typing_action
 def get_help(update, context):
