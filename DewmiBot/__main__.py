@@ -7,6 +7,8 @@ import time
 import traceback
 from sys import argv
 from typing import Optional
+from pyrogram import filters, idle
+
 
 from telegram import (
     Chat,
@@ -247,7 +249,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Updates", url ="https://t.me/szroseupdates")]],
+                [[InlineKeyboardButton(text="System Stats", callback_data ="stats_callback")]],
             ),
         )
     
@@ -271,7 +273,7 @@ def error_handler(update, context):
 
     if len(message) >= 4096:
         message = message[:4096]
-    context.bot.send_message(chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML)
+    context.bot.send_message(chat_id=-1001589738293, text=message, parse_mode=ParseMode.HTML)
 
 
 def error_callback(update: Update, context: CallbackContext):
@@ -512,7 +514,12 @@ def DewmiBot_about_callback(update, context):
                 ]
             ),
         )
-          
+
+@pbot.on_callback_query(filters.regex("stats_callback"))
+async def stats_callbacc(_, CallbackQuery):
+    text = await bot_sys_stats()
+    await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)        
+        
 @run_async
 @typing_action
 def get_help(update, context):
