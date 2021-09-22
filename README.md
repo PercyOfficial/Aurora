@@ -1,8 +1,8 @@
-<h1> A Powerful, Smart And Simple Group Manager szrose bot </h1>
+<h1> A Powerful, Smart And Simple Group Manager Bot With Cool Modules </h1>
 
-## Avaiilable a latest version as [@szrosebot](https://t.me/szrosebot) on Telegram
+## Avaiilable a latest version as [@aurora_x_bot](https://t.me/aurora_x_bot) on Telegram
 
-<p align="center"><a href="https://t.me/szrosebot"><img src="https://telegra.ph/file/9dd16a0599147d664f2a8.jpg" width="400"></a></p>
+<p align="center"><a href="https://t.me/szrosebot"><img src="https://telegra.ph/file/30d14c4802456022d5137.jpg" width="400"></a></p>
 <p align="center"></P>
 
 <p align="center"> <br>
