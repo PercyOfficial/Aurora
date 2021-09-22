@@ -16,8 +16,8 @@ MENU = [
     ],
 ]
 
-@pbot.on_message(filters.command(["start"]))
-async def start(pbot, update):
+@pbot.on_message(filters.command(["tart"]))
+async def tart(pbot, update):
     await update.reply_text(
         text=TEXT,
         reply_markup=MENU,
