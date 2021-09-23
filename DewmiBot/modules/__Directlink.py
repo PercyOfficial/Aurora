@@ -86,7 +86,7 @@ def useragent():
 
 
 __help__ = """
-@szrosebot🇱🇰
+@Aurora_x_Bot 
  ❍ /direct - get any file useing link
 """
-__mod_name__ = "Direct link"
+__mod_name__ = "Direct link🔗"
