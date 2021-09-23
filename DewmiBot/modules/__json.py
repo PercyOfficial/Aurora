@@ -55,7 +55,7 @@ async def _(event):
 
 __help__ = """
  ❍ /json*:* Get Detailed info about any message
-P
+     Powered By Aurora 
 """
 
 __mod_name__ = "JSON🧼"
