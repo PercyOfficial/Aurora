@@ -2,7 +2,7 @@
 
 ## Avaiilable a latest version as [@aurora_x_bot](https://t.me/aurora_x_bot) on Telegram
 
-<p align="center"><a href="https://t.me/szrosebot"><img src="https://telegra.ph/file/30d14c4802456022d5137.jpg" width="400"></a></p>
+<p align="center"><a href="https://t.me/Aurora_x_Bot"><img src="https://telegra.ph/file/30d14c4802456022d5137.jpg" width="400"></a></p>
 <p align="center"></P>
 
 <p align="center"> <br>
