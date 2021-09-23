@@ -130,7 +130,7 @@ async def command_karma(_, message):
       
 
 __help__ = """
-@szrosebot🇱🇰
+Powered By @Aurora_X_Bot 🇰🇷
 [UPVOTE] - Use upvote keywords like "+", "+1", "thanks" etc to upvote a cb.message.
 [DOWNVOTE] - Use downvote keywords like "-", "-1", etc to downvote a cb.message.
 
@@ -139,5 +139,5 @@ __help__ = """
 ❍ /karma: Chek karma list of top 10 users
 
 """
-__mod_name__ = "Karma"            
+__mod_name__ = "Karma🪄"            
 
