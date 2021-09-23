@@ -1,13 +1,13 @@
 {
-      "name": "SZROSEBOT",
-      "description": "Hey there 👋 I'm szrosebot .A Powerful, Smart And Simple Group Manager with some extra features..",
-	  "logo": "https://telegra.ph/file/9dd16a0599147d664f2a8.jpg",
+      "name": "Aurora",
+      "description": "Hey 💜️👋 I'm Aurora.A Powerful, Smart And Simple Group Manager with cool Modules..",
+	  "logo": "https://telegra.ph/file/642398a6c0be4f3bf66c3.jpg",
       "keywords": [
          "Telegram",
          "Groupmanager",
-         "sz-rose-bot"
+         "Aurora"
       ],   
-   "repository": "https://github.com/youtubeslgeekshow/sz-rose-bot",
+   "repository": "https://github.com/Parkseojoon2005/Aurora",
    "buildpacks": [
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
@@ -33,7 +33,7 @@
          "value": ""
       },      
       "HEROKU_API_KEY": {
-         "description": "HEROKU_API_KEY",
+         "description": "HEROKU_API_KEY Get It From Account Settings in Heroku",
          "required": true,
          "value": ""
       },      
