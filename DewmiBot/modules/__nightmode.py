@@ -168,10 +168,10 @@ scheduler.start()
 
 
 __help__ = """
-@szrosebot🇱🇰
+Powered By Aurora 
  ❍ /nightmode on/off
 **Note:** Night Mode chats get Automatically closed at 12pm(IST)
 and Automatically openned at 6am(IST) To Prevent Night Spams.
 """
 
-__mod_name__ = "Night mode"
+__mod_name__ = "Night mode     "
